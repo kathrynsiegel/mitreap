@@ -1,0 +1,148 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require bootstrap_and_overrides
+ *= require_tree .
+ */
+@import "bootstrap";
+body { 
+	padding-top: 60px; 
+	background-color: #fafafa !important;
+	font-family: whitney_htflight_condensed !important;
+}
+@import "bootstrap-responsive";
+
+ @font-face {
+    font-family: 'whitney_htflight_condensed';
+    src: url('whitneyhtf-lightcondensed-webfont.eot');
+    src: url('whitneyhtf-lightcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('whitneyhtf-lightcondensed-webfont.woff') format('woff'),
+         url('whitneyhtf-lightcondensed-webfont.ttf') format('truetype'),
+         url('whitneyhtf-lightcondensed-webfont.svg#whitney_htflight_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#reaplogo {
+	height:70px;
+}
+
+.container {
+}
+
+.span4 {
+}
+
+.content {
+	width: 102%;
+	margin: 0px auto;
+	border-radius: 5px;
+	position: relative;
+	left:-35px;
+	background-color: #fff;
+	border: 1px #e6e6e6 solid;
+	padding: 20px;
+	top:-30px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+#mainpic {
+	width:100%;
+	height:700px;
+	background: url('mainpic.jpg') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	position:relative;
+  	top:-30px;
+}
+
+.navbar {
+	height:50px;
+	position: fixed;
+}
+
+.mainpic-text {
+	background-color: rgba(40,45,46,.77);
+	height:30px;
+	font-family: whitney_htflight_condensed !important;
+	font-size: 48px;
+	color:white;
+	letter-spacing: 10px;
+	padding-bottom: 20px;
+	padding-top:25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position:relative;
+	left:150px;
+}
+
+#regional-main-text {
+	top:120px;
+	width:200px;
+}
+
+#entrepreneurship-main-text {
+	top:150px;
+	width:407px;
+}
+
+#acceleration-main-text {
+	top:180px;
+	width:302px;
+}
+
+#program-main-text {
+	top:210px;
+	width:191px;
+}
+
+#blurb-main-text {
+	background-color: rgba(40,45,46,.77);
+	font-family: whitney_htflight_condensed !important;
+	font-size: 20px;
+	color:white;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	padding-top:15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position:relative;
+	float: right;
+	top:240px;
+	right:20px;
+	height:110px;
+	width:336;
+	text-align: right;
+}
+
+#triple-description {
+	height:400px;
+}
+
+.row {
+	text-align: center;
+}
+
+#collaborate-col {
+	
+}
+
+#ideate-col {
+	
+}
+
+#evaluate-col {
+	
+}
