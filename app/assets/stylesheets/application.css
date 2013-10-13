@@ -41,6 +41,10 @@ body {
 .span4 {
 }
 
+h3 {
+	margin-top:-10px !important;
+}
+
 .content {
 	width: 102%;
 	margin: 0px auto;
@@ -137,6 +141,10 @@ body {
 
 #collaborate-col {
 	
+}
+
+#collab-icon {
+	width:200px;
 }
 
 #ideate-col {
