@@ -1,0 +1,93 @@
+#mainpic {
+	width:100%;
+	height:700px;
+	background: url('mainpic.jpg') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	position:relative;
+  	top:-30px;
+}
+
+.mainpic-text {
+	background-color: rgba(40,45,46,.77);
+	height:30px;
+	font-family: whitney_htflight_condensed !important;
+	font-size: 48px;
+	color:white;
+	letter-spacing: 10px;
+	padding-bottom: 20px;
+	padding-top:25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position:relative;
+	left:150px;
+}
+
+#regional-main-text {
+	top:120px;
+	width:200px;
+}
+
+#entrepreneurship-main-text {
+	top:150px;
+	width:407px;
+}
+
+#acceleration-main-text {
+	top:180px;
+	width:302px;
+}
+
+#program-main-text {
+	top:210px;
+	width:191px;
+}
+
+#blurb-main-text {
+	background-color: rgba(40,45,46,.77);
+	font-family: whitney_htflight_condensed !important;
+	font-size: 20px;
+	color:white;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	padding-top:15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position:relative;
+	float: right;
+	top:240px;
+	right:20px;
+	height:110px;
+	width:336;
+	text-align: right;
+}
+
+#triple-description {
+	height:400px;
+}
+
+.row {
+	text-align: center;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	margin: 0 auto;
+	margin-bottom:20px;
+}
+
+.title-icon {
+	color: white;
+	font-size: 150px !important;
+	position:relative;
+	top:25px;
+}
+
+#collab-img {
+	width:130px;
+	margin-top:35px;
+}
