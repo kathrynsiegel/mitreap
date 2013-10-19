@@ -10,6 +10,18 @@
   	top:-30px;
 }
 
+#second-pic {
+	width:100%;
+	height:700px;
+	background: url('secondpic.jpg') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	position:relative;
+  	top:-30px;
+}
+
 .mainpic-text {
 	background-color: rgba(40,45,46,.77);
 	height:30px;
@@ -82,12 +94,30 @@
 
 .title-icon {
 	color: white;
-	font-size: 150px !important;
 	position:relative;
-	top:25px;
+}
+
+.icon-book {
+	font-size:140px !important;
+	top:30px;
+}
+
+.icon-lightbulb {
+	font-size: 170px !important;
+	top:16px;
 }
 
 #collab-img {
 	width:130px;
 	margin-top:35px;
+}
+
+.info-col {
+  	width: 27%;
+  	padding:20px;
+}
+
+.map-img {
+	position:relative;
+	top:-30px;
 }
