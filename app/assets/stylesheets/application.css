@@ -35,16 +35,9 @@ body {
 	height:70px;
 }
 
-.container {
-}
-
-.span4 {
-}
-
 h3 {
 	margin-top:-10px !important;
 }
-
 
 .navbar {
 	height:50px;
@@ -63,5 +56,21 @@ h3 {
 	background-color: rgb(37,132,184);
 }
 
+.red-reap {
+	background-color: rgb(183,20,96);
+}
 
+.gray-reap {
+	background-color: rgb(47,43,40);
+}
 
+.row {
+	padding-bottom: 45px;
+	text-align: center;
+	margin-left: 0px !important;
+}
+
+.padded-header {
+	padding-top:45px;
+	font-weight: bolder;
+}
