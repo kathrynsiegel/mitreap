@@ -1,0 +1,20 @@
+<div class='container'>
+	<h1 class='main-country-title light-blue-reap'><%= @place.name %></h1>
+	<div class='row row-people light-blue-reap'>
+		<div class="team-member-div span1">
+			<p class="team-p">T</p>
+			<p class="team-p">E</p>
+			<p class="team-p">A</p>
+			<p class="team-p">M</p>
+		</div>
+		<% color = 0 %>
+		<% @place.individuals.each do |individual| %>
+			<div class="team-member-div <%= @colors[color] %>-reap span2 team-member-name">
+				<h6><%= individual.name %></h6>
+				<p class="individual-title"><%= individual.title %></p>
+			</div>
+			<% color = (color + 1)%3 %>
+		<% end %>
+	</div>
+	<div id="person-bio"></div>
+</div>

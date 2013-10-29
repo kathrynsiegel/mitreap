@@ -1,0 +1,285 @@
+#mainpic {
+	width:100%;
+	height:700px;
+	background: url('mainpic.jpg') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	position:relative;
+  	top:-30px;
+}
+
+#second-pic {
+	width:100%;
+	height:700px;
+	background: url('secondpic.jpg') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	position:relative;
+}
+
+#third-pic {
+	width:100%;
+	height:700px;
+	background: url('thirdpic.png') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	position:relative;
+}
+
+.mainpic-text {
+	background-color: rgba(40,45,46,.77);
+	height:70px;
+	font-family: whitney_htflight_condensed !important;
+	font-size: 48px;
+	color:white;
+	letter-spacing: 10px;
+	padding-bottom: 20px;
+	padding-top:10px;
+	padding-left: 15px;
+	position:relative;
+	left:150px;
+}
+
+#regional-main-text {
+	top:180px;
+	width:228px;
+}
+
+#entrepreneurship-main-text {
+	top:210px;
+	width:435px;
+}
+
+#acceleration-main-text {
+	top:240px;
+	width:330px;
+}
+
+#program-main-text {
+	top:270px;
+	width:219px;
+}
+
+#blurb-main-text {
+	background-color: rgba(40,45,46,.77);
+	font-family: whitney_htflight_condensed !important;
+	font-size: 20px;
+	color:white;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	padding-top:15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position:relative;
+	float: right;
+	top:270px;
+	right:20px;
+	height:132px;
+	text-align: right;
+}
+
+#triple-description {
+	height:400px;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	margin: 0 auto;
+	margin-bottom:20px;
+}
+
+.small-circle {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px; 
+	position:relative;
+}
+
+.title-icon {
+	color: white;
+	position:relative;
+}
+
+.icon-book {
+	font-size:140px !important;
+	top:30px;
+}
+
+.icon-lightbulb {
+	font-size: 170px !important;
+	top:16px;
+}
+
+#collab-img {
+	width:130px;
+	margin-top:35px;
+}
+
+.info-col {
+  	width: 30%;
+  	padding:20px;
+}
+
+.partner-country-index {
+	margin-left:2%;
+	margin-right: 2%
+}
+
+.country-img {
+	height:60%;
+	margin-top:20%;
+}
+
+.country-img-wide {
+	width:60%;
+	margin-top:30%;
+}
+
+.country-img-turkey {
+	width:60%;
+	margin-top:39%;
+}
+
+.country-img-china {
+	width:80%;
+	margin-top:23%;
+}
+
+.country-row {
+	margin-left:7.5% !important;
+	padding-bottom:0px;
+}
+
+.country-header-row {
+	padding-bottom:5px;
+}
+
+.country-apply-label {
+	font-size: 24px;
+	color: white;
+	font-weight: bolder;
+	position: relative;
+	top:20%;
+}
+
+.country-apply-button {
+	position:relative;
+	top:20px;
+	font-family: whitney_htflight_condensed !important;
+	letter-spacing: 1px
+}
+
+#bottom-info-div {
+	height:50px;
+}
+
+.bottom-index-row {
+	padding-bottom:30px;
+}
+
+.bottom-circle-label {
+	position: relative;
+	top: -39px;
+	width: 196px;
+}
+
+.bottom-circle-label-1 {
+	position: relative;
+	top: -28px;
+	width: 196px;
+}
+
+.bottom-circle-label-2 {
+	position: relative;
+	top: -10px;
+	width: 196px;
+}
+
+.bottom-circle-label-3 {
+	position: relative;
+	top: -21px;
+	width: 196px;
+}
+
+.bottom-circle-label-4 {
+	position: relative;
+	top: -43px;
+	width: 196px;
+}
+
+.country-label {
+	position:relative;
+	top:-85px;
+	color:white;
+	font-size: 20px;
+}
+
+.country-label-1 {
+	position:relative;
+	top:-70px;
+	color:white;
+	font-size: 20px;
+}
+
+.country-label-2 {
+	position:relative;
+	top:-55px;
+	color:white;
+	font-size: 20px;
+}
+
+.country-label-3 {
+	position:relative;
+	top:-65px;
+	color:white;
+	font-size: 20px;
+}
+
+.country-label-4 {
+	position:relative;
+	top:-85px;
+	color:white;
+	font-size: 20px;
+}
+
+.team-member-div {
+	height:130px;
+	padding:10px;
+	text-align: center;
+	color:white;
+	margin-left:0px;
+}
+
+h6 {
+	color:white;
+	font-family: whitney_htflight_condensed;
+	font-size:15px;
+}
+
+.individual-title {
+	font-size:15px;
+}
+
+.team-p {
+	font-size:15px;
+	font-family: whitney_htflight_condensed;
+	font-weight: bold;
+	padding-bottom: 3px;
+	margin-bottom: 0px;
+}
+
+#person-bio {
+	position: relative;
+	left: 6.4%;
+	width: 87.2%;
+	color:white;
+	padding:10px;
+}

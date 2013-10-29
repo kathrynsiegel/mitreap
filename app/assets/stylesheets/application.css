@@ -32,13 +32,26 @@ body {
 }
 
 #reaplogo {
-	height:70px;
+	height:75px;
 	padding-top:5px;
 	padding-bottom:12px;
 }
 
-h3 {
+h2, h3 {
 	margin-top:-10px !important;
+	font-family: whitney_htflight_condensed !important;
+}
+
+.main-country-title {
+	padding-top: 90px;
+	font-family: whitney_htflight_condensed !important;
+	letter-spacing: 5px;
+	text-align: center;
+	width:99.1%;
+	margin:auto !important;
+	position:relative;
+	color:white;
+	padding-bottom:10px;
 }
 
 .navbar {
@@ -70,6 +83,12 @@ h3 {
 	padding-bottom: 45px;
 	text-align: center;
 	margin-left: 0px !important;
+	max-width: 72.5em !important;
+}
+
+.row-people {
+	margin-left: auto !important;
+	padding-bottom: 0px;
 }
 
 .padded-header {
