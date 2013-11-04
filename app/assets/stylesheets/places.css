@@ -7,7 +7,7 @@
   	-o-background-size: cover;
   	background-size: cover;
   	position:relative;
-  	top:-30px;
+  	top:-50px;
 }
 
 #second-pic {
@@ -96,6 +96,14 @@
 	margin-bottom:20px;
 }
 
+.circle-smaller {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+	margin: 0 auto;
+	margin-bottom:20px;
+}
+
 .small-circle {
 	border-radius: 50%;
 	width: 40px;
@@ -153,6 +161,12 @@
 	margin-top:23%;
 }
 
+.country-img-spain {
+	position: relative;
+	top: 50px;
+	width: 72%;
+}
+
 .country-row {
 	margin-left:7.5% !important;
 	padding-bottom:0px;
@@ -191,6 +205,12 @@
 	width: 196px;
 }
 
+.bottom-circle-label-0 {
+	position: relative;
+	top: 13px;
+	width: 196px;
+}
+
 .bottom-circle-label-1 {
 	position: relative;
 	top: -28px;
@@ -218,6 +238,13 @@
 .country-label {
 	position:relative;
 	top:-85px;
+	color:white;
+	font-size: 20px;
+}
+
+.country-label-0 {
+	position:relative;
+	top:-30px;
 	color:white;
 	font-size: 20px;
 }
@@ -282,4 +309,9 @@ h6 {
 	width: 87.2%;
 	color:white;
 	padding:10px;
+}
+
+.news-button {
+	font-family: whitney_htflight_condensed !important;
+	letter-spacing: 1px
 }

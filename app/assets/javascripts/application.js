@@ -13,14 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require turbolinks
 //= require_tree .
 
 var hasClass = function(element, cls) {
     return (' ' + element.attr('class') + ' ').indexOf(' ' + cls + ' ') > -1;
 }
 
-window.onload = function() {
+$(document).ready(function() {
 	$('.partner-country-index.light-blue-reap').mouseover(function() {
 		$(this).removeClass('light-blue-reap');
 		$(this).addClass('pink-reap');
@@ -45,11 +44,9 @@ window.onload = function() {
 		colorClasses = ['dark-blue-reap','light-blue-reap','pink-reap','red-reap'];
 		for (var i=0; i<colorClasses.length; i++) {
 			if (hasClass($(this),colorClasses[i])) {
-				console.log('hello');
 				$('#person-bio').addClass(colorClasses[i]);
 				$('#person-bio').text('this is a bio');
 			}
-			console.log('hi');
 		}
 	})
 
@@ -63,5 +60,5 @@ window.onload = function() {
 		}
 	})
 
-};
+})
 

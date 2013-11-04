@@ -4,5 +4,6 @@ Mitreap::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root to: 'places#index'
-  resources :places
+  resources :places, only: [:index, :show]
+  resources :news_articles, only: [:index]
 end

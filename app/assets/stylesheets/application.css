@@ -32,9 +32,32 @@ body {
 }
 
 #reaplogo {
-	height:75px;
-	padding-top:5px;
-	padding-bottom:12px;
+	height:65px;
+	position:relative;
+	top:-5px;
+}
+
+.navbar-reap {
+	height:80px !important;
+}
+
+.nav-top-right {
+	position: relative;
+	top: 20px;
+}
+
+.top-bar-button {
+	height: 40px !important;
+	margin-top: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	margin-left:10px;
+}
+
+.apply-link-top-bar {
+	position: relative;
+	top: -5px;
+	color:white !important;
 }
 
 h2, h3 {

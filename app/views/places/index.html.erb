@@ -16,14 +16,15 @@
 	      			</div>
 	    			<h3>Collaborate</h3>
 	    			<p>We bring together representatives from government, economic development, entrepreneurs, universities, risk capital, and large corporations committed to accelerating their regions’ innovation-driven entrepreneurial ecosystems as drivers of regional prosperity and job creation.</p>
+	    			<p><%= link_to 'Read Latest News', 'news_articles#index', class: 'btn news-button' %></p>
 	    		</div>
 		   		<div class="span4 info-col" id="ideate-col">
 		   			<div class="circle pink-reap">
 	      				<i class="icon-lightbulb title-icon"></i>
 	      			</div>
 		    		<h3>Ideate</h3>
-		    		<p>Design and implement a REAP Acceleration Strategy to harness the power of innovation and entrepreneurship and accelerate growth and development in your region’s ecosystem.</p>
-		   			<p>Leverage understanding of key drivers of successful innovation-driven entrepreneurial (IDE) ecosystems to design and implement key programs and policies, informed by MIT research and global best practice.</p>
+		    		<p>Harness the power of innovation and entrepreneurship to accelerate growth and development in your region’s ecosystem.</p>
+		   			<p>We leverage understanding of key drivers of successful innovation-driven entrepreneurial (IDE) ecosystems to design and implement key programs and policies, informed by MIT research and global best practice.</p>
 		    	</div>
 		    	<div class="span4 info-col" id="evaluate-col">
 		    		<div class="circle dark-blue-reap">
@@ -45,49 +46,49 @@
 	    		<h2 class="padded-header">Partner Countries</h2>
 	    	</div>
 	      	<div class="row span12 country-row">
-	      		<a href="/places/1">
+	      		<a href="/places/1" data-no-turbolink>
 		      		<div class="circle dark-blue-reap span3 partner-country-index">
+		      			<%= image_tag 'spain.png', class: 'country-img-spain' %>
+		      			<%= image_tag 'bottomcircle_label.png', text: 'hello', class: 'bottom-circle-label-0' %>
+		      			<p class="country-label-0">Spain (Andalucia)</p>
+		      		</div>
+		      	</a>
+		      	<a href="/places/2" >
+		      		<div class="circle light-blue-reap span3 partner-country-index">
 		      			<%= image_tag 'finland.png', class: 'country-img' %>
 		      			<%= image_tag 'bottomcircle_label.png', text: 'hello', class: 'bottom-circle-label' %>
-		      			<p class="country-label">Spain (Andalucia)</p>
+		      			<p class="country-label">Finland</p>
 		      		</div>
 		      	</a>
-		      	<a href="/places/2">
-		      		<div class="circle light-blue-reap span3 partner-country-index">
-		      			<%= image_tag 'spain.png', class: 'country-img-wide' %>
-		      			<%= image_tag 'bottomcircle_label.png', text: 'hello', class: 'bottom-circle-label-1' %>
-		      			<p class="country-label-1">Finland</p>
-		      		</div>
-		      	</a>
-		      	<a href="/places/3">
+		      	<a href="/places/3" data-no-turbolink>
 		      		<div class="circle dark-blue-reap span3 partner-country-index">
 		      			<%= image_tag 'china.png', class: 'country-img-china' %>
 		      			<%= image_tag 'bottomcircle_label.png', text: 'hello', class: 'bottom-circle-label-4' %>
 		      			<p class="country-label-4">China (Hangzhou)</p>
 		      		</div>
 		      	</a>
-		      	<a href="/places/4">
+		      	<a href="/places/4" data-no-turbolink>
 		      		<div class="circle light-blue-reap span3 partner-country-index">
 		      			<%= image_tag 'newzealand.png', class: 'country-img' %>
 		      			<%= image_tag 'bottomcircle_label.png', text: 'hello', class: 'bottom-circle-label' %>
 		      			<p class="country-label">New Zealand</p>
 		      		</div>
 		      	</a>
-		      	<a href="/places/5">
+		      	<a href="/places/5" data-no-turbolink>
 		      		<div class="circle light-blue-reap span3 partner-country-index">
 		      			<%= image_tag 'scotland.png', class: 'country-img' %>
 		      			<%= image_tag 'bottomcircle_label.png', text: 'hello', class: 'bottom-circle-label' %>
 		      			<p class="country-label">Scotland</p>
 		      		</div>
 		      	</a>
-		      	<a href="/places/6">
+		      	<a href="/places/6" data-no-turbolink>
 		      		<div class="circle dark-blue-reap span3 partner-country-index">
 		      			<%= image_tag 'turkey.png', class: 'country-img-turkey' %>
 		      			<%= image_tag 'bottomcircle_label.png', text: 'hello', class: 'bottom-circle-label-2' %>
 		      			<p class="country-label-2">Turkey (Istanbul)</p>
 		      		</div>
 		      	</a>
-		      	<a href="/places/7">
+		      	<a href="/places/7" >
 		      		<div class="circle light-blue-reap span3 partner-country-index">
 		      			<%= image_tag 'mexico.png', class: 'country-img-wide' %>
 		      			<%= image_tag 'bottomcircle_label.png', text: 'hello', class: 'bottom-circle-label-3' %>
@@ -110,31 +111,20 @@
 	    		<h2 class="padded-header">Our Team</h2>
 	    	</div>
 	      	<div class="row span12 country-row">
-	      		<div class="circle pink-reap span3 partner-country-index">
+	      		<div class="circle-smaller pink-reap span2 partner-country-index">
+	      			<%= image_tag 'fionamurray.jpg', class: 'country-img' %>
+	      		</div>
+	      		<div class="circle-smaller red-reap span2 partner-country-index">
 	      			<%= image_tag 'imagecomingsoon.jpg', class: 'country-img' %>
 	      		</div>
-	      		<div class="circle red-reap span3 partner-country-index">
+	      		<div class="circle-smaller pink-reap span2 partner-country-index">
 	      			<%= image_tag 'imagecomingsoon.jpg', class: 'country-img' %>
 	      		</div>
-	      		<div class="circle pink-reap span3 partner-country-index">
-	      			<%= image_tag 'imagecomingsoon.jpg', class: 'country-img' %>
+	      		<div class="circle-smaller red-reap span2 partner-country-index">
+	      			<%= image_tag 'taylorrose.jpg', class: 'country-img' %>
 	      		</div>
-	      		<div class="circle red-reap span3 partner-country-index">
-	      			<%= image_tag 'imagecomingsoon.jpg', class: 'country-img' %>
-	      		</div>
-	      	</div>
-	      	<div class="row span12 country-row bottom-index-row">
-	      		<div class="circle red-reap span3 partner-country-index">
-	      			<%= image_tag 'imagecomingsoon.jpg', class: 'country-img' %>
-	      		</div>
-	      		<div class="circle pink-reap span3 partner-country-index">
-	      			<%= image_tag 'imagecomingsoon.jpg', class: 'country-img' %>
-	      		</div>
-	      		<div class="circle red-reap span3 partner-country-index">
-	      			<%= image_tag 'imagecomingsoon.jpg', class: 'country-img' %>
-	      		</div>
-	      		<div class="circle pink-reap span3 partner-country-index">
-	      			<%= image_tag 'imagecomingsoon.jpg', class: 'country-img' %>
+	      		<div class="circle-smaller pink-reap span2 partner-country-index">
+	      			<%= image_tag 'katiesiegel.jpg', class: 'country-img' %>
 	      		</div>
 	      	</div>
 	    </div>
