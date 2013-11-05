@@ -201,7 +201,7 @@ Individual.create(place:istanbul,
 	bio: "")
 Individual.create(place:istanbul,
 	name: 'Alaaddin Alpay',
-	title: 'Developer Community Manager for the Partners & Alliances Department at Turkcell',
+	title: 'Developer Community Manager, Partners & Alliances Department at Turkcell',
 	location: 'Istanbul, Turkey',
 	description: "Alaaddin is building an evangelist network to connect developers ranging from university programming students and freelance developers to software development houses and corporate IT professionals. He works within this community to create partnerships with Turkcell in developing new products, services, and applications. He also empowers these communities using Turkcell’s assets such as customer databases, marketing and communication channels, marketing and technology know-how, innovation network, and so on.",
 	bio: "Alaaddin received a BS from Istanbul's Yildiz Technical University in mechanical engineering with a focus in automotive engineering. He later earned his MBA with a focus in management and marketing from the State University of West Georgia in Carrollton, Georgia. Alaaddin joined the team at Turkcell, the leading mobile phone operator in Turkey, over 12 years ago, and has worked in a number of different roles:

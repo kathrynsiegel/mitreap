@@ -114,7 +114,39 @@ h2, h3 {
 	padding-bottom: 0px;
 }
 
+.row-analytics {
+	width:102%;
+}
+
 .padded-header {
 	padding-top:45px;
 	font-weight: bolder;
+}
+
+.span2-7 {
+	width:12.56% !important;
+}
+
+.span2-4 {
+	width: 23.49% !important;
+}
+
+.white-title {
+	color:white;
+	font-family: whitney_htflight_condensed;
+	margin-top:0px;
+}
+
+.no-padding-bottom {
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+.less-padding-bottom {
+	margin-bottom: 10px;
+}
+
+.more-padding-graph {
+	margin-top:15px;
+	margin-bottom:37px;
 }

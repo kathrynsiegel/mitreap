@@ -5,6 +5,6 @@ class PlacesController < ApplicationController
 	def show
 		@place = Place.find(params[:id])
 		num_people = @place.individuals.length
-		@colors = ['red', 'dark-blue', 'pink']
+		@colors = ['red', 'light-blue', 'pink']
 	end
 end

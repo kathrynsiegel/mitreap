@@ -309,9 +309,41 @@ h6 {
 	width: 87.2%;
 	color:white;
 	padding:10px;
+	display: none;
 }
 
 .spaced-font-button {
 	font-family: whitney_htflight_condensed !important;
 	letter-spacing: 1px
+}
+
+.graph-border {
+	margin-left:5px;
+	width: 99.16%;
+	border:20px solid rgb(37,132,184);
+	padding:10px;
+	height: 495px;
+}
+
+.graph-analytics-block {
+	margin:10px;
+	color:white;
+	padding:20px;
+}
+
+.gab-1 {
+	width: 48.18%;
+}
+
+.gab-2 {
+	width: 21.82%;
+}
+
+.gab-3 {
+	position: relative;
+	top: -50px;
+}
+
+.fit1 {
+	height: 176px;
 }
