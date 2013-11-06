@@ -150,3 +150,19 @@ h2, h3 {
 	margin-top:15px;
 	margin-bottom:37px;
 }
+
+.search-input {
+	position:relative;
+	top:4px;
+}
+
+.extra-right-margin {
+	margin-right:20px;
+}
+
+li {
+	margin-left:20px !important;
+}
+
+
+
