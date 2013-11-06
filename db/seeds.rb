@@ -90,7 +90,19 @@ Individual.create(place:china,
 	description: "",
 	bio: "")
 
-newzealand = Place.create(name: 'New Zealand')
+newzealand = Place.create(name: 'New Zealand',
+	:key_challenge => 'New Zealand aims to become the innovation-hub of the Asia-Pacific rim. It plans to achieve this through a competitiveness plan for several sectors.',
+	:key_challenge_index => '80.00',
+    :key_challenge_change => '14.25',
+   	:reap_index_img_url => 'chart1_nz.png',
+    :reap_index => '65.00',
+    :reap_index_change => '10',
+    :money_invested_in_university_startups => '$1 billion',
+    :money_invested_in_university_startups_change => '14.15',
+    :new_phd_grads => '10.00',
+    :new_phd_grads_change => '12.57',
+    :num_university_spin_offs => '200.00',
+    :num_university_spin_offs_change => '10.65' )
 Individual.create(place:newzealand,
 	name: 'Erin Wansbrough',
 	title: 'Regional Manager, Callaghan Innovation',

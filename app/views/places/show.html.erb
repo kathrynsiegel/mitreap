@@ -23,17 +23,29 @@
 		<div class='row row-analytics'>
 			<div class='graph-analytics-block gab-1 dark-blue-reap span6 fit1'>
 				<h4 class="white-title">Key Challenge</h4>
-				<p class="less-padding-bottom">New Zealand aims to become the innovation-hub of the Asia-Pacific rim. It plans to achieve this through a competitiveness plan for several sectors.</p>
-				<h4 class="white-title no-padding-bottom">80.00 <i class="fa fa-caret-up"></i> 14.25%</h4>
+				<p class="less-padding-bottom"><%= @place[:key_challenge] %></p>
+				<h4 class="white-title no-padding-bottom">
+					<%= @place[:key_challenge_index] %>
+					<i class="fa fa-caret-up"></i>
+					<%= @place[:key_challenge_change] %>
+				</h4>
 			</div>
 			<div class='graph-analytics-block dark-blue-reap span3 fit1'>
 				<h4 class="white-title">REAP Index</h4>
-				<%= image_tag 'chart1_nz.png', class: 'less-padding-bottom' %>
-				<p class="no-padding-bottom">65.00 <i class="fa fa-caret-up"></i> 10%</p>
+				<%= image_tag @place[:reap_index_img_url], class: 'less-padding-bottom' %>
+				<p class="no-padding-bottom">
+					<%= @place[:reap_index] %>
+					<i class="fa fa-caret-up"></i>
+					<%= @place[:reap_index_change] %>
+				</p>
 			</div>
 			<div class='graph-analytics-block gab-2 dark-blue-reap span2'>
 				<h5 class="white-title">Money Invested in University Startups</h5>
-				<p class="no-padding-bottom">$1 billion <i class="fa fa-caret-up"></i> 14.15%</p>
+				<p class="no-padding-bottom">
+					<%= @place[:money_invested_in_university_startups] %>
+					<i class="fa fa-caret-up"></i>
+					<%= @place[:money_invested_in_university_startups_change] %>
+				</p>
 			</div>
 			<div class='graph-analytics-block dark-blue-reap span3'>
 				<h4 class="white-title">Innovation Capacity</h4>
@@ -47,22 +59,32 @@
 			</div>
 			<div class='graph-analytics-block gab-2 dark-blue-reap span2'>
 				<h5 class="white-title">New PhD Graduates, 2013</h5>
-				<p class="no-padding-bottom">10.00 <i class="fa fa-caret-down"></i> 12.57%</p>
+				<p class="no-padding-bottom">
+					<%= @place[:new_phd_grads] %>
+					<i class="fa fa-caret-down"></i>
+					<%= @place[:new_phd_grads_change] %>
+				</p>
 			</div>
 			<div class='graph-analytics-block gab-2 dark-blue-reap span2 gab-3'>
 				<h5 class="white-title"># of University Spin-offs, 2013</h5>
-				<p class="no-padding-bottom">200.00 <i class="fa fa-caret-up"></i> 10.65%</p>
+				<p class="no-padding-bottom">
+					<%= @place[:num_university_spin_offs] %>
+					<i class="fa fa-caret-up"></i> 
+					<%= @place[:num_university_spin_offs_change] %>
+				</p>
 			</div>
-			<div class='graph-analytics-block gab-2 dark-blue-reap span2'>
-				<h5 class="white-title">Catalyst</h5>
-				<p class="no-padding-bottom">Prizes: 34</p>
-			</div>
-			<div class='graph-analytics-block gab-2 dark-blue-reap span2 gab-3'>
-				<h5 class="white-title">Location Quotient</h5>
-				<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">Biotech Innovation Cluster<br></a></p>
-				<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">High Tech Cluster<br></a></p>
-				<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">Automobile Innovation Cluster<br></a></p>
-			</div>
+			<% if @place.name == 'New Zealand' %>
+				<div class='graph-analytics-block gab-2 dark-blue-reap span2'>
+					<h5 class="white-title">Catalyst</h5>
+					<p class="no-padding-bottom">Prizes: 34</p>
+				</div>
+				<div class='graph-analytics-block gab-2 dark-blue-reap span2 gab-3'>
+					<h5 class="white-title">Location Quotient</h5>
+					<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">Biotech Innovation Cluster<br></a></p>
+					<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">High Tech Cluster<br></a></p>
+					<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">Automobile Innovation Cluster<br></a></p>
+				</div>
+			<% end %>
 		</div>
 	</div>
 </div>
