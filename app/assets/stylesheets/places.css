@@ -177,16 +177,16 @@
 }
 
 .country-apply-label {
-	font-size: 24px;
+	font-size: 20px;
 	color: white;
 	font-weight: bolder;
 	position: relative;
-	top:20%;
+	top:30%;
 }
 
 .country-apply-button {
 	position:relative;
-	top:20px;
+	top:40px;
 	font-family: whitney_htflight_condensed !important;
 	letter-spacing: 1px
 }
