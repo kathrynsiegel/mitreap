@@ -347,3 +347,9 @@ h6 {
 .fit1 {
 	height: 176px;
 }
+
+.person-img {
+	width:80%;
+	position:relative;
+	top:10%;
+}
