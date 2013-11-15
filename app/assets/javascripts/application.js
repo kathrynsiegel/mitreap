@@ -40,6 +40,26 @@ $(document).ready(function() {
 		$(this).addClass('dark-blue-reap');
 	})
 
+	$('.partner-country-index.pink-reap').mouseover(function() {
+		$(this).removeClass('pink-reap');
+		$(this).addClass('light-blue-reap');
+	})
+
+	$('.partner-country-index.pink-reap').mouseout(function() {
+		$(this).removeClass('light-blue-reap');
+		$(this).addClass('pink-reap');
+	})
+
+	$('.partner-country-index.red-reap').mouseover(function() {
+		$(this).removeClass('red-reap');
+		$(this).addClass('dark-blue-reap');
+	})
+
+	$('.partner-country-index.red-reap').mouseout(function() {
+		$(this).removeClass('dark-blue-reap');
+		$(this).addClass('red-reap');
+	})
+
 	$('.team-member-name').click(function() {
 		colorClasses = ['dark-blue-reap','light-blue-reap','pink-reap','red-reap'];
 		for (var i=0; i<colorClasses.length; i++) {
