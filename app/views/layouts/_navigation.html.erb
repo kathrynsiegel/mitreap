@@ -1,16 +1,24 @@
-<div class="navbar navbar-fixed-top navbar-inner navbar-reap">
-	<div class="container">
-		<a class="brand" href="/"><%= image_tag("reaplogo.png", id: 'reaplogo') %></a>
-		<ul class="nav pull-right nav-top-right">
-			<li><a href="#">About</a></li>
-			<li><a href="#">Apply</a></li>
-			<li><a href="/news_articles">Resources</a></li>
-			<li><a href="#">Partner Regions</a></li>
-			<li><a href="#">MIT Team</a></li>
-			<li><a href="#" class="extra-right-margin">Contact Us</a></li>
-			<li><input type="text" class="control-group search-input"></li>
-			<li><button type="submit" class="btn extra-left-margin">Search</button></li>
+<nav class="navbar navbar-default navbar-reap" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><%= image_tag("reaplogo.png", id: 'reaplogo') %></a>
+  </div>
 
-		</ul>
-	</div>
-</div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#" class='navbar-link'>About</a></li>
+		<li><a href="#" class='navbar-link'>Next Steps</a></li>
+		<li><a href="/news_articles" class='navbar-link'>Resources</a></li>
+		<li><a href="#" class='navbar-link'>Partner Regions</a></li>
+		<li><a href="#" class='navbar-link'>MIT Advantage</a></li>
+		<li><a href="#" class="extra-right-margin navbar-link">Contact Us</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>

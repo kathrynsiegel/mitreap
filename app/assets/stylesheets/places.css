@@ -1,13 +1,15 @@
 #mainpic {
 	width:100%;
-	height:800px;
+	height:750px;
 	background: url('mainpic.jpg') no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	position:relative;
-  	top:-50px;
+  	top: -130px;
+	z-index: -10;
+	margin-bottom:-130px;
 }
 
 #second-pic {
@@ -40,7 +42,7 @@
 	color:white;
 	letter-spacing: 10px;
 	padding-bottom: 20px;
-	padding-top:10px;
+	padding-top:1px;
 	padding-left: 15px;
 	position:relative;
 	left:150px;
@@ -72,15 +74,14 @@
 	font-size: 20px;
 	color:white;
 	letter-spacing: 3px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	padding-top:15px;
 	padding-left: 10px;
 	padding-right: 10px;
 	position:relative;
 	float: right;
-	top:270px;
+	top:335px;
 	right:20px;
-	height:132px;
 	text-align: right;
 }
 
@@ -132,13 +133,18 @@
 }
 
 .info-col {
-  	width: 30%;
   	padding:20px;
+  	height: 100%;
+}
+
+.info-col-line {
+	border-right: 1px solid rgb(220, 220, 220);
 }
 
 .partner-country-index {
-	margin-left:2%;
-	margin-right: 2%
+	margin-left: 3.49%;
+	margin-right: 3.49%;
+	text-align: center;
 }
 
 .country-img {
@@ -168,12 +174,13 @@
 }
 
 .country-row {
-	margin-left:7.5% !important;
-	padding-bottom:0px;
+	margin:auto;
 }
 
 .country-header-row {
 	padding-bottom:5px;
+	text-align: center;
+	margin:auto;
 }
 
 .country-apply-label {
@@ -186,13 +193,9 @@
 
 .country-apply-button {
 	position:relative;
-	top:40px;
+	top:60px;
 	font-family: whitney_htflight_condensed !important;
 	letter-spacing: 1px
-}
-
-#bottom-info-div {
-	height:50px;
 }
 
 .bottom-index-row {
@@ -201,50 +204,54 @@
 
 .bottom-circle-label {
 	position: relative;
-	top: -39px;
-	width: 196px;
+	top: -33px;
+	width: 197px;
+	left: -8%;
 }
 
 .bottom-circle-label-0 {
 	position: relative;
-	top: 13px;
+	top: 30px;
 	width: 196px;
+	left: -8%;
 }
 
 .bottom-circle-label-1 {
 	position: relative;
-	top: -28px;
+	top: 30px;
 	width: 196px;
-}
+	left: -8%;}
 
 .bottom-circle-label-2 {
 	position: relative;
-	top: -10px;
+	top: 10px;
 	width: 196px;
+	left: -8%;
 }
 
 .bottom-circle-label-3 {
 	position: relative;
-	top: -21px;
 	width: 196px;
+	left:-7.5%;
 }
 
 .bottom-circle-label-4 {
 	position: relative;
-	top: -43px;
+	top: -19px;
 	width: 196px;
+	left: -7.5%;
 }
 
 .country-label {
 	position:relative;
-	top:-85px;
+	top:-74px;
 	color:white;
 	font-size: 20px;
 }
 
 .country-label-0 {
 	position:relative;
-	top:-30px;
+	top:-13px;
 	color:white;
 	font-size: 20px;
 }
@@ -258,21 +265,21 @@
 
 .country-label-2 {
 	position:relative;
-	top:-55px;
+	top:-33px;
 	color:white;
 	font-size: 20px;
 }
 
 .country-label-3 {
 	position:relative;
-	top:-65px;
+	top:-42px;
 	color:white;
 	font-size: 20px;
 }
 
 .country-label-4 {
 	position:relative;
-	top:-85px;
+	top:-61px;
 	color:white;
 	font-size: 20px;
 }
@@ -349,7 +356,31 @@ h6 {
 }
 
 .person-img {
-	width:80%;
+	width:94%;
 	position:relative;
 	top:10%;
+}
+
+.white-text {
+	color: white;
+	margin:0px;
+}
+
+.contact-us {
+	text-align: center;
+	padding:20px;
+}
+
+.text-contact-form {
+	height:200px !important;
+	resize: none;
+}
+
+.submit-button-row {
+	text-align: right;
+}
+
+.bottom-circle-label-name {
+	width:196px;
+	position:relative;
 }

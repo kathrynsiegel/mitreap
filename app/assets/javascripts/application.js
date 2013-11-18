@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require Chart
 //= require_tree .
 
 var hasClass = function(element, cls) {
