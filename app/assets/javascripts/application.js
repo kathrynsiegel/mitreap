@@ -85,15 +85,14 @@ $(document).ready(function() {
 		}
 	})
 
-	// $('.team-member-name').mouseout(function() {
-	// 	colorClasses = ['dark-blue-reap','light-blue-reap','pink-reap','red-reap'];
-	// 	for (var i=0; i<colorClasses.length; i++) {
-	// 		if (hasClass($(this),colorClasses[i])) {
-	// 			$('#person-bio').removeClass(colorClasses[i]);
-	// 			$('#person-bio').text('');
-	// 		}
-	// 	}
-	// })
+	$('.person-circle').mouseover(function() {
+		jQuery($(this).children()[1]).css('visibility','visible');	
+		jQuery($(this).children()[2]).css('visibility','visible');		
+	})
 
+	$('.person-circle').mouseout(function() {
+		jQuery($(this).children()[1]).css('visibility','hidden');
+		jQuery($(this).children()[2]).css('visibility','hidden');
+	})
 })
 

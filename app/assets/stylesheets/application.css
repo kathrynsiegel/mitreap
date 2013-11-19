@@ -67,12 +67,15 @@ h4 {
 	font-family: whitney_htflight_condensed !important;
 }
 
+h1 {
+	font-family: whitney_htflight_condensed, bolder !important;
+}
+
 .main-country-title {
 	padding-top: 90px;
 	font-family: whitney_htflight_condensed !important;
 	letter-spacing: 5px;
 	text-align: center;
-	width:99.1%;
 	margin:auto !important;
 	position:relative;
 	color:white;
@@ -99,11 +102,6 @@ h4 {
 	background-color: rgb(47,43,40);
 }
 
-.row-people {
-	margin-left: auto !important;
-	padding-bottom: 0px;
-}
-
 .row-analytics {
 	width:102%;
 }
@@ -113,11 +111,11 @@ h4 {
 	font-weight: bolder;
 }
 
-.span2-7 {
+.col-sm-2-7 {
 	width:12.56% !important;
 }
 
-.span2-4 {
+.col-sm-2-4 {
 	width: 23.49% !important;
 }
 

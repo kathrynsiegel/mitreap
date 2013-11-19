@@ -358,7 +358,7 @@ h6 {
 .person-img {
 	width:94%;
 	position:relative;
-	top:10%;
+	top:20px;
 }
 
 .white-text {
@@ -381,6 +381,17 @@ h6 {
 }
 
 .bottom-circle-label-name {
-	width:196px;
-	position:relative;
+	width: 196px;
+	position: relative;
+	top: -39px;
+	left: -7.6%;
+	visibility: hidden;
 }
+
+.name-label {
+	position:relative;
+	top:-85px;
+	visibility: hidden;
+}
+
+
