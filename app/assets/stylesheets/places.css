@@ -332,29 +332,6 @@ h6 {
 	height: 495px;
 }
 
-.graph-analytics-block {
-	margin:10px;
-	color:white;
-	padding:20px;
-}
-
-.gab-1 {
-	width: 48.18%;
-}
-
-.gab-2 {
-	width: 21.82%;
-}
-
-.gab-3 {
-	position: relative;
-	top: -50px;
-}
-
-.fit1 {
-	height: 176px;
-}
-
 .person-img {
 	width:94%;
 	position:relative;
@@ -393,5 +370,3 @@ h6 {
 	top:-85px;
 	visibility: hidden;
 }
-
-

@@ -1,6 +1,7 @@
 <div class='container'>
-	<div class='row'>
-		<h1 class='main-country-title dark-blue-reap'><%= @place.name %></h1>
+	<div class='row dark-blue-reap'>
+		<h1 class='main-country-title'><%= @place.name %></h1>
+		<p class='white-text col-sm-12 center-txt'>New Zealand prides itself as a smart, innovative nation. From ground-breaking cancer research, award winning digital content, to world leading dairy nutrition, our products and services are exported around the world. But much of our potential in this area remains unrealised and fostering a high performing science and innovation sector is key to our future economic well-being. Innovation is the name of the game for New Zealand. Kiwi companies are working hard to be smart, think sharper and get to market faster. New Zealanders are an ingenious people. We have a strong heritage of developing great ideas borne out of practical neccessity, or inspired brilliance, or simply an instinct of what might work. Like other governments around the world, the New Zealand government continues to signal the importance it places on science and innovation as a key driver of our economic wellbeing. The Ministry of Business, Innovation and Employment's (MBIE) Science and Innovation Group has been charged with lifting our economic, environmental and social performance by driving the science and innovation sector. We do this through our strategic leadership and through the networks we build across government, research organisations, business and industry. MBIE is committed to growing the number of driven, successful entrepreneurs who are willing to help grow the innocation ecosystem in New Zealand. We support a number of programmes and initiatives that all contribute to this goal. We are partnering with people and organisations across the ecosystem to drive the growth of highly-skilled entrepreneurs.</p>
 	</div>
 	<div class='row dark-blue-reap'>
 		<div class="team-member-div col-sm-1 dark-blue-reap">
@@ -11,7 +12,7 @@
 		</div>
 		<% color = 0 %>
 		<% @place.individuals.each do |individual| %>
-			<div class="team-member-div <%= @colors[color] %>-reap col-sm-2" id="individual-<%= @place.individuals.index(individual)%>">
+			<div class="team-member-div <%= @colors[color] %>-reap col-sm-2 team-member-name" id="individual-<%= @place.individuals.index(individual)%>">
 				<h6><%= individual.name %></h6>
 				<p class="individual-title"><%= individual.title %></p>
 			</div>
@@ -21,71 +22,17 @@
 	<%= content_tag "div", id: "person-bio", data: {url: @place.individuals} do %>
 	<% end %>
 	<div class='row'>
-		<div class='row row-analytics'>
-			<div class='graph-analytics-block gab-1 dark-blue-reap col-sm-6 fit1'>
+		<div class='row col-sm-12'>
+			<div class='graph-analytics-block gab-1 dark-blue-reap col-sm-6 '>
 				<h4 class="white-title">Must-Win Battle</h4>
-				<p class="less-padding-bottom"><%= @place[:key_challenge] %></p>
+				<p class="less-padding-bottom white-text"><%= @place[:key_challenge] %></p>
 				<h4 class="white-title no-padding-bottom">
 					<%= @place[:key_challenge_index] %>
 					<i class="fa fa-caret-up"></i>
 					<%= @place[:key_challenge_change] %>
 				</h4>
 			</div>
-			<div class='graph-analytics-block dark-blue-reap col-sm-3 fit1'>
-				<h4 class="white-title">REAP Index</h4>
-				<%= image_tag @place[:reap_index_img_url], class: 'less-padding-bottom' %>
-				<p class="no-padding-bottom">
-					<%= @place[:reap_index] %>
-					<i class="fa fa-caret-up"></i>
-					<%= @place[:reap_index_change] %>
-				</p>
-			</div>
-			<div class='graph-analytics-block gab-2 dark-blue-reap col-sm-2'>
-				<h5 class="white-title">Money Invested in University Startups</h5>
-				<p class="no-padding-bottom">
-					<%= @place[:money_invested_in_university_startups] %>
-					<i class="fa fa-caret-up"></i>
-					<%= @place[:money_invested_in_university_startups_change] %>
-				</p>
-			</div>
-			<div class='graph-analytics-block dark-blue-reap col-sm-3'>
-				<h4 class="white-title">Innovation Capacity</h4>
-				<%= image_tag 'innov_chart1.png', class: 'more-padding-graph' %>
-				<p class="no-padding-bottom">20.00 <i class="fa fa-caret-up"></i> 12.7%</p>
-			</div>
-			<div class='graph-analytics-block dark-blue-reap col-sm-3'>
-				<h4 class="white-title">Entrepreneurship Capacity</h4>
-				<%= image_tag 'entre_chart1.png', class: 'more-padding-graph' %>
-				<p class="no-padding-bottom">23.00 <i class="fa fa-caret-up"></i> 12%</p>
-			</div>
-			<div class='graph-analytics-block gab-2 dark-blue-reap col-sm-2'>
-				<h5 class="white-title">New PhD Graduates, 2013</h5>
-				<p class="no-padding-bottom">
-					<%= @place[:new_phd_grads] %>
-					<i class="fa fa-caret-down"></i>
-					<%= @place[:new_phd_grads_change] %>
-				</p>
-			</div>
-			<div class='graph-analytics-block gab-2 dark-blue-reap col-sm-2 gab-3'>
-				<h5 class="white-title"># of University Spin-offs, 2013</h5>
-				<p class="no-padding-bottom">
-					<%= @place[:num_university_spin_offs] %>
-					<i class="fa fa-caret-up"></i> 
-					<%= @place[:num_university_spin_offs_change] %>
-				</p>
-			</div>
-			<% if @place.name == 'New Zealand' %>
-				<div class='graph-analytics-block gab-2 dark-blue-reap col-sm-2'>
-					<h5 class="white-title">Catalyst</h5>
-					<p class="no-padding-bottom">Prizes: 34</p>
-				</div>
-				<div class='graph-analytics-block gab-2 dark-blue-reap col-sm-2 gab-3'>
-					<h5 class="white-title">Location Quotient</h5>
-					<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">Biotech Innovation Cluster<br></a></p>
-					<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">High Tech Cluster<br></a></p>
-					<p class="no-padding-bottom"><i class="fa fa-check"></i> <a href="http://www.clusterobservatory.eu/index.html#!view=regionalmapping;i=V16140;y=2011;r=NC10;rsl=0;rp=NC10;s=CC20-it;sp=CC20-STND;p=map;ll=56.3,26.1;z=4" class="dashboard-cluster-metric" style="color:white;" target="_blank">Automobile Innovation Cluster<br></a></p>
-				</div>
-			<% end %>
+			
 		</div>
 	</div>
 </div>
