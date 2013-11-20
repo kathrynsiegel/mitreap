@@ -91,7 +91,7 @@ Individual.create(place:china,
 	bio: "")
 
 newzealand = Place.create(name: 'New Zealand',
-	:key_challenge => 'New Zealand aims to become the innovation-hub of the Asia-Pacific rim. It plans to achieve this through a competitiveness plan for several sectors.',
+	:key_challenge => 'New Zealand aims to become the innovation-hub of the Asia-Pacific rim.',
 	:key_challenge_index => '80.00',
     :key_challenge_change => '14.25%',
    	:reap_index_img_url => 'chart1_nz.png',

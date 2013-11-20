@@ -370,3 +370,88 @@ h6 {
 	top:-85px;
 	visibility: hidden;
 }
+
+.graph-analytics-block {
+	padding: 10px;
+	margin: 10px;
+}
+
+.block-left-edge {
+	margin-left:0px;
+	margin-right:10px;
+	margin-top: 10px;
+	margin-bottom:20px;
+	padding:10px;
+	padding-left:0px;
+}
+
+.block-right-edge {
+	margin-right:0px;
+	margin-left:10px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	padding:10px;
+	padding-right:0px;
+}
+
+.carousel-control {
+	height:0px;
+}
+
+.chart-control {
+	height:300px !important;
+}
+
+.carousel-dot-control {
+	position: relative;
+	top: 20px;
+}
+
+h2.icap {
+	position:relative;
+	top:20px;
+	padding-bottom:10px;
+}
+
+.left-col {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.all-graphs-div {
+	padding:0px;
+	margin:0px;
+}
+
+.block-fit-110 {
+	height: 110px;
+	width: 20.72%;
+}
+
+.block-fit-120 {
+	height: 126px;
+	width: 20.72%;
+}
+
+.block-fit-120-small {
+	height: 126px;
+}
+
+.block-fit-120-x {
+	margin-left:0px;
+	margin-right:10px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	padding:10px;
+	padding-left:0px;
+	height:126px;
+}
+
+.block-fit-120-x {
+	margin-left:0px;
+	margin-right:10px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	padding:10px;
+	padding-left:0px;
+}
