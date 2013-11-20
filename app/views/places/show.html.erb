@@ -23,37 +23,86 @@
 	<% end %>
 	<div class='row hard-center'>
 		<div class='row col-sm-12 all-graphs-div'>
-			<div class='col-sm-3 left-col'>
-				<div class='dark-blue-reap block-left-edge'>
-					<h4 class="white-title">Must-Win Battle</h4>
-					<p class="less-padding-bottom white-text"><%= @place[:key_challenge] %></p>
-					<h4 class="white-title no-padding-bottom">
-						<%= @place[:key_challenge_index] %>
-						<i class="fa fa-caret-up"></i>
-						<%= @place[:key_challenge_change] %>
-					</h4>
-				</div>
-				<div class='dark-blue-reap block-fit-120-x'>
-					<h4 class="white-title">Top Three Research Institutions</h4>
-					<p class="less-padding-bottom white-text">University of Canterbury</p>
-					<p class="less-padding-bottom white-text">University of Otago</p>
-					<p class="less-padding-bottom white-text">University of Auckland</p>
+			<div class='dark-blue-reap must-win-battle-block col-sm-4'>
+				<h4 class="white-title">Must-Win Battle</h4>
+				<p class="less-padding-bottom white-text"><%= @place[:key_challenge] %></p>
+			</div>
+			<div class='dark-blue-reap graph-analytics-block col-sm-4'>
+				<h4 class="white-title">REAP Index</h4>
+				<p class="less-padding-bottom white-text"><%= @place[:reap_index] %> <i class="fa fa-caret-down"></i> <%= @place[:reap_index_change] %></p>
+			</div>
+		</div>
+		<div class='row col-sm-12'>
+			<div class='col-sm-4 dark-blue-reap icap-block'>
+				<div id="carousel-example-generic" class="carousel slide chart-control" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active carousel-dot-control"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1" class='carousel-dot-control'></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2" class='carousel-dot-control'></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="3" class='carousel-dot-control'></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner chart-control">
+				    <div class="item active">
+				    	<div class='graph-analytics-block chart-control dark-blue-reap col-sm-4'>
+							<h4 class="white-title hard-center2 graph-title">Patents/year</h4>
+							<canvas id="icap-chart" width="300" height="180"></canvas>
+						</div>
+				    </div>
+				    <div class="item center-div">
+				    	<div class='graph-analytics-block chart-control dark-blue-reap col-sm-4'>
+							<h4 class="white-title hard-center2 graph-title">Published Papers/year</h4>
+							<canvas id="icap-chart2" width="300" height="180"></canvas>
+						</div>
+				    </div>
+				    <div class="item center-div">
+				    	<div class='col-sm-4 dark-blue-reap graph-analytics-block'>
+							<h4 class="white-title graph-title">STEM Graduates/year</h4>
+							<canvas id="stem-chart" width="300" height="180"></canvas>
+						</div>
+					</div>
+					<div class="item center-div">
+						<div class='col-sm-4 dark-blue-reap graph-analytics-block'>
+							<h4 class="white-title graph-title">Gross R&D Expenditure</h4>
+							<canvas id="rd-chart" width="300" height="180"></canvas>
+						</div>
+					</div>
+				  </div>
 				</div>
 			</div>
-			<div class='graph-analytics-block dark-blue-reap col-sm-5'>
+			<div class='col-sm-2 pentacle-block'>
+				<div class='dark-blue-reap pentacle-img-block'>
+					<%= image_tag 'reap2.png', class: 'pentacle-img' %>
+				</div>
+
+				<div class='block-right-edge dark-blue-reap icap-block'>
+					<h4 class="white-title">Top 3 Industry Clusters</h4>
+					<p class="less-padding-bottom white-text">Biotech Innovation Cluster</p>
+					<p class="less-padding-bottom white-text">High Tech Cluster</p>
+					<p class="less-padding-bottom white-text">Automobile Innovation Cluster</p>
+				</div>
+			</div>
+			<div class='pentacle-block dark-blue-reap col-sm-4'>
 				<h4 class="white-title">Population</h4>
-				<canvas id="population-chart" width="400" height="200"></canvas>
+				<canvas id="population-chart" width="300" height="180"></canvas>
 			</div>
+
+
+
+			<div class='dark-blue-reap col-sm-4'>
+				<h4 class="white-title">Top Three Research Institutions</h4>
+				<p class="less-padding-bottom white-text">University of Canterbury</p>
+				<p class="less-padding-bottom white-text">University of Otago</p>
+				<p class="less-padding-bottom white-text">University of Auckland</p>
+			</div>
+			
 			<div class='graph-analytics-block dark-blue-reap col-sm-1'>
 				<h4 class="white-title">Celebrated Regional Innovation</h4>
 				<p class="less-padding-bottom white-text">The Ski Plane</p>
 			</div>
-			<div class='block-right-edge dark-blue-reap col-sm-2 block-fit-110'>
-				<h4 class="white-title">Top 3 Industry Clusters</h4>
-				<p class="less-padding-bottom white-text">Biotech Innovation Cluster</p>
-				<p class="less-padding-bottom white-text">High Tech Cluster</p>
-				<p class="less-padding-bottom white-text">Automobile Innovation Cluster</p>
-			</div>
+			
 			<div class='graph-analytics-block dark-blue-reap col-sm-1 block-fit-120-small'>
 				<h4 class="white-title">Celebrated Regional Entrepreneur</h4>
 				<p class="less-padding-bottom white-text">Sir Angus Tait</p>
@@ -66,40 +115,8 @@
 				<p class="less-padding-bottom white-text">Lightning Lab - New Zealand's Digital Accelerator</p>
 			</div>
 			
-			<div class='col-sm-5 dark-blue-reap graph-analytics-block block-fit-120-y'>
-				<div id="carousel-example-generic" class="carousel slide chart-control" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active carousel-dot-control"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1" class='carousel-dot-control'></li>
-				  </ol>
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner chart-control">
-				    <div class="item active">
-				    	<div class='graph-analytics-block chart-control dark-blue-reap col-sm-5'>
-							<h4 class="white-title hard-center2">Patents/year</h4>
-							<canvas id="icap-chart" width="400" height="200"></canvas>
-						</div>
-				    </div>
-				    <div class="item center-div">
-				    	<div class='graph-analytics-block chart-control dark-blue-reap col-sm-5'>
-							<h4 class="white-title hard-center2">Published Papers/year</h4>
-							<canvas id="icap-chart2" width="400" height="200"></canvas>
-						</div>
-				    </div>
-				  </div>
-				</div>
-			</div>
-			<div class='col-sm-5 dark-blue-reap graph-analytics-block'>
-				<h4 class="white-title">STEM Graduates/year</h4>
-				<canvas id="stem-chart" width="400" height="200"></canvas>
-			</div>
-			<div class='col-sm-5 dark-blue-reap graph-analytics-block'>
-				<h4 class="white-title">GDP</h4>
-				<canvas id="rd-chart" width="400" height="200"></canvas>
-			</div>
-			<div class='col-sm-5 dark-blue-reap graph-analytics-block'>
+			
+			<div class='col-sm-4 dark-blue-reap graph-analytics-block'>
 				<h4 class="white-title">Intellectual Property Protection</h4>
 				<canvas id="iprop-chart" width="400" height="200"></canvas>
 			</div>
