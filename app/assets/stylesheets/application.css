@@ -168,7 +168,6 @@ li {
 	text-align: center;
 }
 
-.hard-center2 {
-	position: relative;
-	left: 65%;
+.added-padding-bottom {
+	margin-bottom:50px;
 }

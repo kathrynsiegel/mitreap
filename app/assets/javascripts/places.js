@@ -186,4 +186,38 @@ $(document).ready(function() {
 		}
 		var ipropChart = new Chart(ctiprop.getContext("2d")).Line(data_iprop,defaults);
 	}
+
+	var ctgdpc = document.getElementById("gdpc-chart");
+	if (ctgdpc) {
+		var data_gdpc = {
+			labels : ["2000", "2001","2002","2003","2007","2008","2009","2010"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [19729, 20294, 21493, 21675, 26674, 28917, 29083, 28635]
+				}
+			]
+		}
+		var gdpcChart = new Chart(ctgdpc.getContext("2d")).Line(data_gdpc,defaults);
+	}
+
+	var ctsccorp = document.getElementById("sccorp-chart");
+	if (ctsccorp) {
+		var data_sccorp = {
+			labels : ["2004","2005","2006","2007","2008","2009","2010","2011"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [63266, 65590, 68071, 70624, 53512, 48358, 44898, 42447]		
+				}
+			]
+		}
+		var sccorpChart = new Chart(ctsccorp.getContext("2d")).Line(data_sccorp,defaults);
+	}
 })
