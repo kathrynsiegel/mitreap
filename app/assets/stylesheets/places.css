@@ -419,7 +419,8 @@ h2.icap {
 .must-win-battle-block {
 	margin-top:10px;
 	padding:10px;
-	left:10px;
+	margin-right:-10px;
+	width:49%;
 }
 
 .icap-block {
@@ -470,5 +471,21 @@ h3.cap-title {
 .catalyst-sub {
 	padding-left:40px;
 	padding-right:40px;
+}
+
+.dashboard-row {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.custom-metrics-block {
+	padding:10px;
+	margin:0px;
+	margin-left:10px;
+	width:14%;
+}
+
+.adj-height-dash {
+	height: 301px !important;
 }
 

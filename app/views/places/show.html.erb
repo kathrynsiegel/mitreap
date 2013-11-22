@@ -22,17 +22,17 @@
 	<%= content_tag "div", id: "person-bio", data: {url: @place.individuals} do %>
 	<% end %>
 	<div class='row hard-center'>
-		<div class='row col-sm-12 all-graphs-div'>
-			<div class='dark-blue-reap must-win-battle-block col-sm-4 col-sm-offset-2'>
+		<div class='row col-sm-12 all-graphs-div dashboard-row'>
+			<div class='dark-blue-reap must-win-battle-block col-sm-6'>
 				<h4 class="white-title">Must-Win Battle</h4>
 				<p class="less-padding-bottom white-text"><%= @place[:key_challenge] %></p>
 			</div>
-			<div class='dark-blue-reap graph-analytics-block col-sm-4 reap-index-block'>
+			<div class='dark-blue-reap graph-analytics-block col-sm-6 reap-index-block'>
 				<h4 class="white-title">REAP Index</h4>
 				<p class="less-padding-bottom white-text"><%= @place[:reap_index] %> <i class="fa fa-caret-down"></i> <%= @place[:reap_index_change] %></p>
 			</div>
 		</div>
-		<div class='row col-sm-12'>
+		<div class='row col-sm-12 dashboard-row'>
 			<div class='col-sm-4 dark-blue-reap icap-block'>
 				<h3 class='white-text cap-title'>Innovation Capacity Analysis</h3>
 				<div id="carousel-example-generic" class="carousel slide chart-control" data-ride="carousel">
@@ -100,8 +100,7 @@
 					<p class="less-padding-bottom white-text">Automobile Innovation Cluster</p>
 				</div>
 			</div>
-			<div class='row col-sm-12'>
-				<div class='col-sm-4 dark-blue-reap pentacle-block'>
+				<div class='col-sm-4 dark-blue-reap pentacle-block adj-height-dash'>
 					<h3 class='white-text cap-title'>Entrepreneurship Capacity Analysis</h3>
 					<div id="carousel-example-generic-2" class="carousel slide chart-control" data-ride="carousel">
 					  <!-- Indicators -->
@@ -127,10 +126,19 @@
 					  </div>
 					</div>
 				</div>
-			</div>
+				<div class='col-sm-2 dark-blue-reap white-text custom-metrics-block adj-height-dash'>
+					<p># New University Spin Offs/year</p>
+					<p>$ Invested in University Startups (USD)/year</p>
+					<p># New PhD Graduates/year</p>
+					<p># health-related graduates/year</p>
+					<p># high-tech jobs created/ year</p> 
+					<p>Total Employment/ year</p>
+					<p>Employment by foreign-owned firms/ year</p>
+				</div>
+		</div>
 
-			<div class='row col-sm-12 added-padding-bottom'>
-				<div class='catalyst-row-left dark-blue-reap col-sm-12 white-text'>
+		<div class='row col-sm-12 added-padding-bottom dashboard-row'>
+			<div class='catalyst-row-left dark-blue-reap col-sm-12 white-text'>
 					<table>
 						<tbody>
 							<tr>
@@ -152,7 +160,6 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
 			</div>
 		</div>
 	</div>

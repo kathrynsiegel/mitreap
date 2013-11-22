@@ -168,6 +168,6 @@ li {
 	text-align: center;
 }
 
-.added-padding-bottom {
-	margin-bottom:50px;
+div.added-padding-bottom {
+	margin-bottom:50px !important;
 }
