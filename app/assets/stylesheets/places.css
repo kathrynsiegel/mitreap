@@ -489,3 +489,7 @@ h3.cap-title {
 	height: 301px !important;
 }
 
+.ecap-block {
+	padding:10px;
+	margin-left:10px;
+}
