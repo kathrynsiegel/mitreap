@@ -5,3 +5,45 @@
 .newsfeed-container {
 	text-align: center;
 }
+
+.about-jumbo {
+	text-align:center;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	background-color: #585858;
+	color:white;
+}
+
+.content-row-about {
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+}
+
+.about-icon-cog {
+	color:white;
+	font-size: 100px !important;
+	position:relative;
+	top:25px;
+}
+
+.about-icon-list {
+	color:white;
+	font-size: 100px !important;
+	position:relative;
+	top:30px;
+}
+
+.about-icon-rocket {
+	color:white;
+	font-size: 100px !important;
+	position:relative;
+	top:30px;
+}
+
+h3.about-page-subtitle {
+	font-weight: bolder;
+	letter-spacing: 1px;
+	font-size: 22px;
+	margin-top:10px !important;
+}

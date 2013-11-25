@@ -148,8 +148,9 @@
   	height: 100%;
 }
 
-.info-col-line {
+.info-col-line-double {
 	border-right: 1px solid rgb(220, 220, 220);
+	border-left: 1px solid rgb(220, 220, 220);
 }
 
 .partner-country-index {

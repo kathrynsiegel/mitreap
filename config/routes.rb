@@ -6,6 +6,8 @@ Mitreap::Application.routes.draw do
   root to: 'places#index'
   get '/contact', to: "static_pages#contact"
   get '/advantage', to: "static_pages#advantage"
+  get '/about', to: "static_pages#about"
+  get '/apply', to: "static_pages#apply"
   resources :places, only: [:index, :show]
   resources :news_articles, only: [:index]
 end
