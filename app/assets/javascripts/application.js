@@ -94,5 +94,9 @@ $(document).ready(function() {
 		jQuery($(this).children()[1]).css('visibility','hidden');
 		jQuery($(this).children()[2]).css('visibility','hidden');
 	})
+
+	$('#partner-regions-link').bind("ajax:after", function(evt, xhr, settings){
+    	window.scroll(0, 1000);
+    })
 })
 
