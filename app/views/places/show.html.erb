@@ -1,20 +1,18 @@
-<div class='container'>
+<div class='container' id='<%=@place.name%>'>
 	<div class='row dark-blue-reap'>
 		<h1 class='main-country-title'><%= @place.name %></h1>
-		<p class='white-text col-sm-12 center-txt'>New Zealand prides itself as a smart, innovative nation. From ground-breaking cancer research, award winning digital content, to world leading dairy nutrition, our products and services are exported around the world. But much of our potential in this area remains unrealised and fostering a high performing science and innovation sector is key to our future economic well-being. Innovation is the name of the game for New Zealand. Kiwi companies are working hard to be smart, think sharper and get to market faster. New Zealanders are an ingenious people. We have a strong heritage of developing great ideas borne out of practical neccessity, or inspired brilliance, or simply an instinct of what might work. Like other governments around the world, the New Zealand government continues to signal the importance it places on science and innovation as a key driver of our economic wellbeing. The Ministry of Business, Innovation and Employment's (MBIE) Science and Innovation Group has been charged with lifting our economic, environmental and social performance by driving the science and innovation sector. We do this through our strategic leadership and through the networks we build across government, research organisations, business and industry. MBIE is committed to growing the number of driven, successful entrepreneurs who are willing to help grow the innocation ecosystem in New Zealand. We support a number of programmes and initiatives that all contribute to this goal. We are partnering with people and organisations across the ecosystem to drive the growth of highly-skilled entrepreneurs.</p>
+		<% if @place.name == "New Zealand" %>
+			<p class='white-text col-sm-12 center-txt'>New Zealand prides itself as a smart, innovative nation. From ground-breaking cancer research, award winning digital content, to world leading dairy nutrition, our products and services are exported around the world. But much of our potential in this area remains unrealised and fostering a high performing science and innovation sector is key to our future economic well-being. Innovation is the name of the game for New Zealand. Kiwi companies are working hard to be smart, think sharper and get to market faster. New Zealanders are an ingenious people. We have a strong heritage of developing great ideas borne out of practical neccessity, or inspired brilliance, or simply an instinct of what might work. Like other governments around the world, the New Zealand government continues to signal the importance it places on science and innovation as a key driver of our economic wellbeing. The Ministry of Business, Innovation and Employment's (MBIE) Science and Innovation Group has been charged with lifting our economic, environmental and social performance by driving the science and innovation sector. We do this through our strategic leadership and through the networks we build across government, research organisations, business and industry. MBIE is committed to growing the number of driven, successful entrepreneurs who are willing to help grow the innocation ecosystem in New Zealand. We support a number of programmes and initiatives that all contribute to this goal. We are partnering with people and organisations across the ecosystem to drive the growth of highly-skilled entrepreneurs.</p>
+		<% end %>
 	</div>
 	<div class='row dark-blue-reap'>
 		<div class="team-member-div col-sm-1 dark-blue-reap">
-			<p class="team-p">T</p>
-			<p class="team-p">E</p>
-			<p class="team-p">A</p>
-			<p class="team-p">M</p>
+			</br><p class="team-p">TEAM</p>
 		</div>
 		<% color = 0 %>
 		<% @place.individuals.each do |individual| %>
-			<div class="team-member-div <%= @colors[color] %>-reap col-sm-2 team-member-name" id="individual-<%= @place.individuals.index(individual)%>">
+			<div class="team-member-div <%= @colors[color] %>-reap col-sm-1 team-member-name" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<%=individual.title%>. <%=individual.bio%>" data-original-title="" title="" id="individual-<%= @place.individuals.index(individual)%>">
 				<h6><%= individual.name %></h6>
-				<p class="individual-title"><%= individual.title %></p>
 			</div>
 			<% color = (color + 1)%3 %>
 		<% end %>
@@ -127,8 +125,8 @@
 								<canvas id="sccorp-chart" width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
-								<h4 class="white-title">Number of Entrepreneurs/year</h4>
-								<p>No data yet.</p>
+								<h4 class="white-title">Total Early-Stage Entrepreneurship</h4>
+						    	<canvas id="earlyentrep-chart" width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
 						    	<h4 class="white-title">Venture Capital Investments in Region/year</h4>
@@ -182,10 +180,10 @@
 						    </div>
 						    <div class="item">
 						    	<h4 class="white-title"># New PhD Graduates/year</h4>
-						    	<p>No data yet.</p>
+						    	<canvas id="phdgrad-chart" width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
-						    	<h4 class="white-title"># health-related graduates/year</h4>
+						    	<h4 class="white-title"># Health-Related Graduates/year</h4>
 						    	<p>No data yet.</p>
 						    </div>
 						</div>

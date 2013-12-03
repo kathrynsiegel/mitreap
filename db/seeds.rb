@@ -186,7 +186,10 @@ Individual.create(place:scotland,
 	description: 'The AWS management team has extensive experience of offshore engineering and renewable energy projects both in the UK and overseas. Headed by Chief Executive Simon Grey, the teams are based in Inverness and supported by a small number of firms who provide specialist services such as legal and financial advice, engineering consultancy and PR & communications.',
 	bio: 'Simon is a chartered engineer with 28 years experience of power generation projects and business management of which 22 years have been in the renewables sector. He is responsible for the day-to-day running of the company.')
 
-istanbul = Place.create(name: 'Turkey (Istanbul)')
+istanbul = Place.create(name: 'Turkey (Istanbul)',
+	:key_challenge => 'Istanbul aims to become an innovation-hub.',
+	:key_challenge_index => '80.00',
+    :key_challenge_change => '14.25%')
 Individual.create(place:istanbul,
 	name: 'Dilek Cetindamar',
 	title: 'Professor',
@@ -231,7 +234,10 @@ Individual.create(place:istanbul,
 	description: "Teaching and research in entrepreneurship.",
 	bio: "Dr. Ahmet Murat Fiş got his BA degree in Bogazici University, Istanbul, Turkey and MBA degree in Oklahoma State University, Stillwater, USA. After his MBA, he worked for industry with various responsibilities in various departments such as the Office of the President, Human Resources, Quality, and Information Systems. After seven years of industry experience in which he also attended a two year Management Trainee Program, he began the PhD Program at Sabanci University, Istanbul, Turkey. He got his PhD degree in January, 2009. Besides some teaching experience as a research assistant, he has presented several papers and posters in various local and international conferences. His research interests focus on corporate entrepreneurship, entrepreneurship, and TQM in general. He also serves as assessor/chief assessor for Kalder in the Turkish National Quality Award since 1999.")
 
-mexico = Place.create(name: 'Mexico (Veracruz)')
+mexico = Place.create(name: 'Mexico (Veracruz)',
+	:key_challenge => 'Mexico aims to become an innovation-hub.',
+	:key_challenge_index => '80.00',
+    :key_challenge_change => '14.25%')
 Individual.create(place:mexico,
 	name: 'Abraham C. Rodriguez Garcia',
 	title: 'Managing Director of Technology Innovation – State Government of Veracruz',

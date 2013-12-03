@@ -61,30 +61,6 @@ $(document).ready(function() {
 		$(this).addClass('red-reap');
 	})
 
-	$('.team-member-name').click(function() {
-		colorClasses = ['dark-blue-reap','light-blue-reap','pink-reap','red-reap'];
-		for (var i=0; i<colorClasses.length; i++) {
-			if (hasClass($(this),colorClasses[i])) {
-				var id_str = $(this).attr('id');
-				var id = id_str.substring(id_str.length-1);
-				$('#person-bio').addClass(colorClasses[i]);
-				var txt = $('#person-bio').data('url')[id]['bio'];
-				if ($('#person-bio').text() == txt) {
-					$('#person-bio').text('');
-					$('#person-bio').css('display','none');
-				}
-				else {
-					$('#person-bio').text(txt);
-					$('#person-bio').css('display','block');
-				}
-			}
-			else {
-				$('#person-bio').removeClass(colorClasses[i]);
-			}
-
-		}
-	})
-
 	$('.person-circle').mouseover(function() {
 		jQuery($(this).children()[1]).css('visibility','visible');	
 		jQuery($(this).children()[2]).css('visibility','visible');		
