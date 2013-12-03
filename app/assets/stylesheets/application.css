@@ -171,3 +171,12 @@ li {
 div.added-padding-bottom {
 	margin-bottom:50px !important;
 }
+
+a.no-decorate-link {
+	color:white !important;
+}
+
+.buffer-top {
+	height:80px;
+}
+

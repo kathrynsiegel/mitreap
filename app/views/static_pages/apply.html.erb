@@ -13,7 +13,7 @@
 	<div class="apply-header dark-blue-reap">
 		<h2 class='apply-page-subtitle'>3. Fill out application</h2>
 	</div>
-	<%= form_tag '/submit_application' do %>
+	<%= form_for @app, url: {action: "create_app"} do |f| %>
 		<div class='row col-sm-12 apply-container'>
 			<div class='col-sm-6'>
 				<div class='row buffered-form-row'>
@@ -21,7 +21,7 @@
 						1. Region Name
 					</h4>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'region_name', nil, class: 'form-control' %>
+						<%= f.text_field :region_name, class: 'form-control' %>
 					</div>
 				</div>
 				<h4 class="apply-timeline-header">
@@ -32,7 +32,7 @@
 						a. Region population size (Desired size: between 3-10 Million)
 					</div>
 					<div class='col-sm-7'>
-						<%= text_field_tag 'region_population_size', nil, class: 'form-control' %>
+						<%= f.text_field :region_population_size, class: 'form-control' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -40,7 +40,7 @@
 						b. If your proposed region is a specific part of a country, please help us by clarifying the borders.
 					</div>
 					<div class='col-sm-7'>
-						<%= text_area_tag 'region_borders', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_area :region_borders, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row'>
@@ -48,9 +48,9 @@
 						c. What are the current top three industries in the region?
 					</div>
 					<div class='col-sm-7'>
-						<%= text_field_tag 'top_industry_1', nil, class: 'form-control buffered-form-row', resize:'none' %>
-						<%= text_field_tag 'top_industry_2', nil, class: 'form-control buffered-form-row', resize:'none' %>
-						<%= text_field_tag 'top_industry_3', nil, class: 'form-control buffered-form-row', resize:'none' %>
+						<%= f.text_field :top_industry_1, class: 'form-control buffered-form-row', resize:'none' %>
+						<%= f.text_field :top_industry_2, class: 'form-control buffered-form-row', resize:'none' %>
+						<%= f.text_field :top_industry_3, class: 'form-control buffered-form-row', resize:'none' %>
 					</div>
 				</div>
 				<h4 class="apply-timeline-header">
@@ -59,7 +59,7 @@
 				<p>
 					Please describe your region's challenges around Innovation-Driven Entrepreneurial Ecosystem development:
 				</p>
-				<%= text_area_tag 'region_challenges_ide', nil, class: 'form-control no-resize-area' %>
+				<%= f.text_area :region_challenges_ide, class: 'form-control no-resize-area' %>
 				<h4 class="apply-timeline-header">
 					4. Champion Information
 				</h4>
@@ -71,7 +71,7 @@
 						Name
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'champion_name', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :champion_name, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -79,7 +79,7 @@
 						Organization and Title
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'champion_organization', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :champion_organization, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -87,7 +87,7 @@
 						Email Address
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'champion_email', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :champion_email, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -95,7 +95,7 @@
 						Phone Number
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'champion_phone', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :champion_phone, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -103,30 +103,30 @@
 						Mailing Address
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'champion_address', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :champion_address, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<h4 class="apply-timeline-header">
 					5. Your Champion's Role
 				</h4>
 				<p>Please take this opportunity to tell us more about your champion's current role in transforming your regional economy and accelerating your region's entrepreneurial ecosystem and why you should be selected as your regional MIT REAP Champion.</p>
-				<%= text_area_tag 'champion_current_role', nil, class: 'form-control no-resize-area' %>
+				<%= f.text_area :champion_current_role, class: 'form-control no-resize-area' %>
 				<h4 class="apply-timeline-header">
 					6. Vision
 				</h4>
 				<p>Please share your vision for how participation in MIT REAP will assist in transforming your regional economy and innovation-driven entrepreneurial ecosystem.</p>
-				<%= text_area_tag 'why_reap', nil, class: 'form-control no-resize-area' %>
+				<%= f.text_area :why_reap, class: 'form-control no-resize-area' %>
 				<h4 class="apply-timeline-header">
 					7. Funding
 				</h4>
 				<p>Is there an explicit entity/organization (e.g. regional economic development agency or corporate sponsor) already identified and willing to fund REAP participation? If yes, please identify and note whether this budget is under your control.</p>
-				<%= text_area_tag 'sponsor_entity', nil, class: 'form-control no-resize-area' %>
+				<%= f.text_area :sponsor_entity, class: 'form-control no-resize-area' %>
 				<h4 class="apply-timeline-header">
 					8. Team Plan
 				</h4>
 				<p><b>Do you have a team in place?:</b> If you have identified your team members, please skip to question #9 below to provide their detailed information.</p>
 				<p><b>Are you are still in the beginning stages of team planning?:</b> Please use the space below to briefly describe your preliminary plan for who you would engage on your regional team to represent the 5 stakeholder seats -- (Government/Economic Development, Entrepreneur, Big Corporate, University, Risk Capital) -- organizations or individual names are appropriate here.  This should represent clear thinking about key stakeholders and leaders in your region necessary to make participation in this effort a success, and how you are able to engage them. </p>
-				<%= text_area_tag 'team_in_place', nil, class: 'form-control no-resize-area' %>
+				<%= f.text_area :team_in_place, class: 'form-control no-resize-area' %>
 				<h4 class="apply-timeline-header">
 					9. Team Roster
 				</h4>
@@ -137,7 +137,7 @@
 						Name
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'govt_name', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :govt_name, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -145,7 +145,7 @@
 						Organization and Title
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'govt_organization', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :govt_organization, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -153,7 +153,7 @@
 						His/Her Role in Accelerating Your Region's Ecosystem
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'govt_role', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :govt_role, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -161,7 +161,7 @@
 						Email Address
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'govt_email', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :govt_email, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -169,7 +169,7 @@
 						Other Information
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'govt_other', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :govt_other, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<h5>b. Entrepreneur</h5>
@@ -179,7 +179,7 @@
 						Name
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'entrepreneur_name', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :entrepreneur_name, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -187,7 +187,7 @@
 						Organization and Title
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'entrepreneur_organization', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :entrepreneur_organization, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -195,7 +195,7 @@
 						His/Her Role in Accelerating Your Region's Ecosystem
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'entrepreneur_role', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :entrepreneur_role, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -203,7 +203,7 @@
 						Email Address
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'entrepreneur_email', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :entrepreneur_email, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -211,7 +211,7 @@
 						Other Information
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'entrepreneur_other', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :entrepreneur_other, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<h5>d. Corporate Representative</h5>
@@ -221,7 +221,7 @@
 						Name
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'corp_name', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :corp_name, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -229,7 +229,7 @@
 						Organization and Title
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'corp_organization', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :corp_organization, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -237,7 +237,7 @@
 						His/Her Role in Accelerating Your Region's Ecosystem
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'corp_role', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :corp_role, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -245,7 +245,7 @@
 						Email Address
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'corp_email', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :corp_email, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -253,7 +253,7 @@
 						Other Information
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'corp_other', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :corp_other, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 			</div>
@@ -309,7 +309,7 @@
 						Name
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'risk_name', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :risk_name, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -317,7 +317,7 @@
 						Organization and Title
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'risk_organization', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :risk_organization, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -325,7 +325,7 @@
 						His/Her Role in Accelerating Your Region's Ecosystem
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'risk_role', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :risk_role, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -333,7 +333,7 @@
 						Email Address
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'risk_email', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :risk_email, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -341,7 +341,7 @@
 						Other Information
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'risk_other', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :risk_other, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<h5>e. University Representative</h5>
@@ -351,7 +351,7 @@
 						Name
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'university_name', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :university_name, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -359,7 +359,7 @@
 						Organization and Title
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'university_organization', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :university_organization, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -367,7 +367,7 @@
 						His/Her Role in Accelerating Your Region's Ecosystem
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'university_role', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :university_role, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -375,7 +375,7 @@
 						Email Address
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'university_email', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :university_email, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 				<div class='row buffered-form-row'>
@@ -383,13 +383,13 @@
 						Other Information
 					</div>
 					<div class='col-sm-9'>
-						<%= text_field_tag 'university_other', nil, class: 'form-control no-resize-area' %>
+						<%= f.text_field :university_other, class: 'form-control no-resize-area' %>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class='row col-sm-12 buffered-button-row'>
-			<%= button_tag 'Submit Application', class: 'col-sm-2 col-sm-offset-5 btn' %>
+			<%= f.submit 'Submit Application', class: 'col-sm-2 col-sm-offset-5 btn' %>
 		</div>
 	<% end %>
 </div>

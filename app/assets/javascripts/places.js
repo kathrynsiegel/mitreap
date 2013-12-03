@@ -220,4 +220,89 @@ $(document).ready(function() {
 		}
 		var sccorpChart = new Chart(ctsccorp.getContext("2d")).Line(data_sccorp,defaults);
 	}
+
+	var ctbusiday = document.getElementById("busiday-chart");
+	if (ctbusiday) {
+		var data_busiday = {
+			labels : ["2001", "2002", "2003", "2004","2005","2006","2007","2008","2009","2010","2011"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [12, 12, 12, 12, 12, 12, 12, 12, 1, 1, 1]		
+				}
+			]
+		}
+		var busidayChart = new Chart(ctbusiday.getContext("2d")).Line(data_busiday,defaults);
+	}
+
+	var ctgdpcap = document.getElementById("gdpcap-chart");
+	if (ctgdpcap) {
+		var data_gdpcap = {
+			labels : ["2000", "2001", "2002", "2003", "2007","2008","2009","2010"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [19729, 20294, 21493, 21675, 26674, 28917, 29083, 28635]		
+				}
+			]
+		}
+		var gdpcapChart = new Chart(ctgdpcap.getContext("2d")).Line(data_gdpcap,defaults);
+	}
+
+	var ctvcinv = document.getElementById("vcinv-chart");
+	if (ctvcinv) {
+		var data_vcinv = {
+			labels : ["2003", "2004", "2005", "2006", "2007","2008","2009","2010","2011","2012","2013"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [12, 26, 24, 33, 46, 29, 18, 20, 15, 20, 14]
+				}
+			]
+		}
+		var vcinvChart = new Chart(ctvcinv.getContext("2d")).Line(data_vcinv,defaults);
+	}
+
+	var ctdoluniv = document.getElementById("doluniv-chart");
+	if (ctdoluniv) {
+		var data_doluniv = {
+			labels : ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007","2008","2009", "2011"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [31175, 31571, 31581, 32154, 37882, 39459, 41797, 41973, 39950, 42209, 46163]
+				}
+			]
+		}
+		var dolunivChart = new Chart(ctdoluniv.getContext("2d")).Line(data_doluniv,defaults);
+	}
+
+	var cttotemp = document.getElementById("totemp-chart");
+	if (cttotemp) {
+		var data_totemp = {
+			labels : ["2007","2008","2009", "2010", "2011", "2012"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [2.175, 2.189, 2.165, 2.181, 2.216, 2.217]
+				}
+			]
+		}
+		var totempChart = new Chart(cttotemp.getContext("2d")).Line(data_totemp,defaults);
+	}
 })

@@ -22,69 +22,75 @@
 	<%= content_tag "div", id: "person-bio", data: {url: @place.individuals} do %>
 	<% end %>
 	<div class='row hard-center'>
-		<div class='row col-sm-12 all-graphs-div dashboard-row'>
-			<div class='dark-blue-reap must-win-battle-block col-sm-6'>
-				<h4 class="white-title">Must-Win Battle</h4>
-				<p class="less-padding-bottom white-text"><%= @place[:key_challenge] %></p>
+		<div class='row dashboard-row'>
+			<div class='col-sm-6 must-win-battle-block'>
+				<div class='dark-blue-reap padded10-block'>
+					<h4 class="white-title">Must-Win Battle</h4>
+					<p class="less-padding-bottom white-text"><%= @place[:key_challenge] %></p>
+				</div>
 			</div>
-			<div class='dark-blue-reap graph-analytics-block col-sm-6 reap-index-block'>
-				<h4 class="white-title">REAP Index</h4>
-				<p class="less-padding-bottom white-text"><%= @place[:reap_index] %> <i class="fa fa-caret-down"></i> <%= @place[:reap_index_change] %></p>
+			<div class='col-sm-6 reap-index-block'>
+				<div class='dark-blue-reap padded10-block'>
+					<h4 class="white-title">REAP Index</h4>
+					<p class="less-padding-bottom white-text"><%= @place[:reap_index] %> <i class="fa fa-caret-down"></i> <%= @place[:reap_index_change] %></p>
+				</div>
 			</div>
 		</div>
-		<div class='row col-sm-12 dashboard-row'>
-			<div class='col-sm-4 dark-blue-reap icap-block'>
-				<h3 class='white-text cap-title'>Innovation Capacity Analysis</h3>
-				<div id="carousel-example-generic" class="carousel slide chart-control" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active carousel-dot-control"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1" class='carousel-dot-control'></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2" class='carousel-dot-control'></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="3" class='carousel-dot-control'></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="4" class='carousel-dot-control'></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="5" class='carousel-dot-control'></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="6" class='carousel-dot-control'></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="7" class='carousel-dot-control'></li>
-				  </ol>
+		<div class='row dashboard-row'>
+			<div class='col-sm-5 icap-block white-text'>
+				<div class='dark-blue-reap padded10-block'>
+					<h3 class='white-text cap-title'>Innovation Capacity Analysis</h3>
+					<div id="carousel-example-generic" class="carousel slide chart-control" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active carousel-dot-control"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1" class='carousel-dot-control'></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2" class='carousel-dot-control'></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3" class='carousel-dot-control'></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="4" class='carousel-dot-control'></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="5" class='carousel-dot-control'></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="6" class='carousel-dot-control'></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="7" class='carousel-dot-control'></li>
+					  </ol>
 
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner chart-control">
-				    <div class="item active">
-						<h4 class="white-title">Patents/year</h4>
-						<canvas id="icap-chart" width="300" height="180"></canvas>
-				    </div>
-				    <div class="item center-div">
-						<h4 class="white-title">Published Papers/year</h4>
-						<canvas id="icap-chart2" width="300" height="180"></canvas>
-				    </div>
-				    <div class="item center-div">
-						<h4 class="white-title graph-title">STEM Graduates/year</h4>
-						<canvas id="stem-chart" width="300" height="180"></canvas>
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner chart-control">
+					    <div class="item active">
+							<h4 class="white-title">Patents/year</h4>
+							<canvas id="icap-chart" width="400" height="200"></canvas>
+					    </div>
+					    <div class="item center-div">
+							<h4 class="white-title">Published Papers/year</h4>
+							<canvas id="icap-chart2" width="400" height="200"></canvas>
+					    </div>
+					    <div class="item center-div">
+							<h4 class="white-title">STEM Graduates/year</h4>
+							<canvas id="stem-chart" width="400" height="200"></canvas>
+						</div>
+						<div class="item center-div">
+							<h4 class="white-title">Gross R&D Expenditure</h4>
+							<canvas id="rd-chart" width="400" height="200"></canvas>
+						</div>
+						<div class="item center-div">
+							<h4 class="white-title">Top Three Research Institutions</h4>
+							<p class="listed-p less-padding-bottom white-text">University of Canterbury</p>
+							<p class="listed-p less-padding-bottom white-text">University of Otago</p>
+							<p class="listed-p less-padding-bottom white-text">University of Auckland</p>
+						</div>
+						<div class="item center-div">
+							<h4 class="white-title">Intellectual Property Protection</h4>
+							<canvas id="iprop-chart" width="400" height="200"></canvas>
+						</div>
+						<div class="item center-div">
+							<h4 class="white-title">Celebrated Regional Innovation</h4>
+							<p class="listed-p less-padding-bottom white-text">The Ski Plane</p>
+						</div>
+						<div class="item center-div">
+							<h4 class="white-title">GDP per capita</h4>
+							<canvas id="gdpc-chart" width="400" height="200"></canvas>
+						</div>
+					  </div>
 					</div>
-					<div class="item center-div">
-						<h4 class="white-title graph-title">Gross R&D Expenditure</h4>
-						<canvas id="rd-chart" width="300" height="180"></canvas>
-					</div>
-					<div class="item center-div">
-						<h4 class="white-title">Top Three Research Institutions</h4>
-						<p class="less-padding-bottom white-text">University of Canterbury</p>
-						<p class="less-padding-bottom white-text">University of Otago</p>
-						<p class="less-padding-bottom white-text">University of Auckland</p>
-					</div>
-					<div class="item center-div">
-						<h4 class="white-title">Intellectual Property Protection</h4>
-						<canvas id="iprop-chart" width="300" height="180"></canvas>
-					</div>
-					<div class="item center-div">
-						<h4 class="white-title">Celebrated Regional Innovation</h4>
-						<p class="less-padding-bottom white-text">The Ski Plane</p>
-					</div>
-					<div class="item center-div">
-						<h4 class="white-title">GDP per capita</h4>
-						<canvas id="gdpc-chart" width="300" height="180"></canvas>
-					</div>
-				  </div>
 				</div>
 			</div>
 			<div class='col-sm-2 pentacle-block'>
@@ -92,96 +98,137 @@
 					<h3 class='white-text cap-title'>Linkages</h3>
 					<%= image_tag 'reap2.png', class: 'pentacle-img' %>
 				</div>
-
-				<div class='block-right-edge dark-blue-reap icap-block'>
+				<div class='block-right-edge dark-blue-reap padded10-block'>
 					<h4 class="white-title">Top 3 Industry Clusters</h4>
 					<p class="less-padding-bottom white-text">Biotech Innovation Cluster</p>
 					<p class="less-padding-bottom white-text">High Tech Cluster</p>
 					<p class="less-padding-bottom white-text">Automobile Innovation Cluster</p>
 				</div>
 			</div>
-			<div class='col-sm-4 dark-blue-reap ecap-block adj-height-dash'>
-				<h3 class='white-text cap-title'>Entrepreneurship Capacity Analysis</h3>
-				<div id="carousel-example-generic-2" class="carousel slide chart-control" data-ride="carousel">
-					  <!-- Indicators -->
-					<ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active carousel-dot-control"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="1" class="carousel-dot-control"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="2" class="carousel-dot-control"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="3" class="carousel-dot-control"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="4" class="carousel-dot-control"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="5" class="carousel-dot-control"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="6" class="carousel-dot-control"></li>
-					</ol>
+			<div class='col-sm-5 ecap-block white-text'>
+				<div class='dark-blue-reap padded10-block'>
+					<h3 class='white-text cap-title'>Entrepreneurship Capacity Analysis</h3>
+					<div id="carousel-example-generic-2" class="carousel slide chart-control" data-ride="carousel">
+						  <!-- Indicators -->
+						<ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-2" data-slide-to="1" class="carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-2" data-slide-to="2" class="carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-2" data-slide-to="3" class="carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-2" data-slide-to="4" class="carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-2" data-slide-to="5" class="carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-2" data-slide-to="6" class="carousel-dot-control"></li>
+						</ol>
 
-					  <!-- Wrapper for slides -->
-					<div class="carousel-inner chart-control">
-					    <div class="item active">
-							<h4 class="white-title">S&C Corps Incorporated/year</h4>
-							<canvas id="sccorp-chart" width="300" height="180"></canvas>
-					    </div>
-					    <div class="item">
-							<h4 class="white-title">Number of Entrepreneurs/year</h4>
-							<p>No data yet.</p>
-					    </div>
-					    <div class="item">
-					    	<h4 class="white-title">Venture Capital Investments in Region/year</h4>
-					    	<p>No data yet.</p>
-					    </div>
-					    <div class="item">
-					    	<h4 class="white-title">Top 3 business parks, innovation hubs or accelerators</h4>
-					    	<p>No data yet.</p>
-					    </div>
-					    <div class="item">
-					    	<h4 class="white-title">Number of days to start a business</h4>
-					    	<p>No data yet.</p>
-					    </div>
-					    <div class='item'>
-							<h4 class="white-title">Celebrated Regional Entrepreneur</h4>
-							<p class="less-padding-bottom white-text">Sir Angus Tait</p>
+						  <!-- Wrapper for slides -->
+						<div class="carousel-inner chart-control">
+						    <div class="item active">
+								<h4 class="white-title">S&C Corps Incorporated/year</h4>
+								<canvas id="sccorp-chart" width="400" height="200"></canvas>
+						    </div>
+						    <div class="item">
+								<h4 class="white-title">Number of Entrepreneurs/year</h4>
+								<p>No data yet.</p>
+						    </div>
+						    <div class="item">
+						    	<h4 class="white-title">Venture Capital Investments in Region/year</h4>
+						    	<canvas id="vcinv-chart" width="400" height="200"></canvas>
+						    </div>
+						    <div class="item">
+						    	<h4 class="white-title">Top 3 business parks, innovation hubs or accelerators</h4>
+						    	<p>No data yet.</p>
+						    </div>
+						    <div class="item">
+						    	<h4 class="white-title">Number of days to start a business</h4>
+						    	<canvas id="busiday-chart" width="400" height="200"></canvas>
+						    </div>
+						    <div class='item'>
+								<h4 class="white-title">Celebrated Regional Entrepreneur</h4>
+								<p class="listed-p less-padding-bottom white-text">Sir Angus Tait</p>
+							</div>
+						    <div class="item">
+						    	<h4 class="white-title">GDP/capita</h4>
+						    	<canvas id="gdpcap-chart" width="400" height="200"></canvas>
+						    </div>
 						</div>
-					    <div class="item">
-					    	<h4 class="white-title">GDP/capita</h4>
-					    	<p>No data yet.</p>
-					    </div>
 					</div>
 				</div>
 			</div>
-			<div class='col-sm-2 dark-blue-reap white-text custom-metrics-block adj-height-dash'>
-					<h3 class='cap-title'>Custom Metrics</h3>
-					<p># New University Spin Offs/year</p>
-					<p>$ Invested in University Startups (USD)/year</p>
-					<p># New PhD Graduates/year</p>
-					<p># health-related graduates/year</p>
-					<p># high-tech jobs created/ year</p> 
-					<p>Total Employment/ year</p>
-					<p>Employment by foreign-owned firms/ year</p>
-			</div>
 		</div>
 
-		<div class='row col-sm-12 added-padding-bottom dashboard-row'>
-			<div class='catalyst-row-left dark-blue-reap col-sm-12 white-text'>
-					<table>
-						<tbody>
-							<tr>
-								<td class="catalyst-title catalyst-sub">
-									Catalysts/Initiatives
-								</td>
-								<td class="catalyst-sub">
-									Callaghan Innovation
-								</td>
-								<td class="catalyst-sub">
-									Wynyard Quarter Innovation Precinct
-								</td>
-								<td class="catalyst-sub">
-									Kiwi Langing Pad and Catapult
-								</td>
-								<td class="catalyst-sub">
-									Lightning Lab - New Zealand's Digital Accelerator
-								</td>
-							</tr>
-						</tbody>
-					</table>
+
+		<div class='row added-padding-bottom dashboard-row'>
+			<div class='col-sm-5 white-text custom-metrics-block'>
+				<div class='dark-blue-reap padded10-block'>
+					<h3 class='white-text cap-title'>Custom Metrics - Education</h3>
+					<div id="carousel-example-generic-3" class="carousel slide chart-control" data-ride="carousel">
+						  <!-- Indicators -->
+						<ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic-3" data-slide-to="0" class="active carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-3" data-slide-to="1" class="carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-3" data-slide-to="2" class="carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-3" data-slide-to="3" class="carousel-dot-control"></li>
+						</ol>
+
+						  <!-- Wrapper for slides -->
+						<div class="carousel-inner chart-control">
+						    <div class="item active">
+								<h4 class="white-title"># New University Spin Offs/year</h4>
+								<p>No data yet.</p>
+						    </div>
+						    <div class="item">
+								<h4 class="white-title">$ Invested in University Startups (USD)/year</h4>
+								<canvas id="doluniv-chart" width="400" height="200"></canvas>
+						    </div>
+						    <div class="item">
+						    	<h4 class="white-title"># New PhD Graduates/year</h4>
+						    	<p>No data yet.</p>
+						    </div>
+						    <div class="item">
+						    	<h4 class="white-title"># health-related graduates/year</h4>
+						    	<p>No data yet.</p>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='col-sm-5 white-text custom-metrics-block-2'>
+				<div class='dark-blue-reap padded10-block'>
+					<h3 class='white-text cap-title'>Custom Metrics - Employment</h3>
+					<div id="carousel-example-generic-4" class="carousel slide chart-control" data-ride="carousel">
+						  <!-- Indicators -->
+						<ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic-4" data-slide-to="0" class="active carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-4" data-slide-to="1" class="carousel-dot-control"></li>
+						    <li data-target="#carousel-example-generic-4" data-slide-to="2" class="carousel-dot-control"></li>
+						</ol>
+
+						  <!-- Wrapper for slides -->
+						<div class="carousel-inner chart-control">
+						    <div class="item active">
+								<h4 class="white-title"># high-tech jobs created/ year</h4>
+								<p>No data yet.</p>
+						    </div>
+						    <div class="item">
+								<h4 class="white-title">Total Employment/ year</h4>
+								<canvas id="totemp-chart" width="400" height="200"></canvas>
+						    </div>
+						    <div class="item">
+						    	<h4 class="white-title">Employment by foreign-owned firms/ year</h4>
+						    	<p>No data yet.</p>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='catalyst-row-left col-sm-2 white-text'>
+				<div class='dark-blue-reap padded10-block'>
+					<p class="catalyst-title">Catalysts/Initiatives</p>
+					<p class='listed-p'><a class='no-decorate-link' href='http://www.callaghaninnovation.govt.nz/'>Callaghan Innovation</a></p>
+					<p class='listed-p'><a class='no-decorate-link' href='http://www.wynyard-quarter.co.nz/Wynyard-Quarter/Home.aspx'>Wynyard Quarter Innovation Precinct</a></p>
+					<p class='listed-p'><a class='no-decorate-link' href='http://kiwilandingpad.com/'>Kiwi Langing Pad and Catapult</a></p>
+					<p class='listed-p'><a class='no-decorate-link' href='http://lightninglab.co.nz/'>Lightning Lab - New Zealand's Digital Accelerator</a></p>
+				</div>
 			</div>
 		</div>
 	</div>

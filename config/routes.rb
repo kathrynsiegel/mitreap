@@ -8,6 +8,7 @@ Mitreap::Application.routes.draw do
   get '/advantage', to: "static_pages#advantage"
   get '/about', to: "static_pages#about"
   get '/apply', to: "static_pages#apply"
+  post '/create_app', to: 'static_pages#create_app'
   resources :places, only: [:index, :show]
   resources :news_articles, only: [:index]
 end

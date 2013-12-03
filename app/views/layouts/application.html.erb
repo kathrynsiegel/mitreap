@@ -12,8 +12,19 @@
   <body>
     <div>
       <%= render 'layouts/navigation' %>
-    <div>
+    </div>
     <main role="main">
+      <div class='buffer-top'></div>
+      <% if flash %>
+        <% flash.each do |name, msg| %>
+            <div class="flash-msg">
+              <div class="alert alert-<%= name == :notice ? "success" : "danger" %>">
+                <a class="close" data-dismiss="alert">x</a>
+                <%= content_tag :div, msg, id: "flash_#{name}" if msg.is_a?(String) %>
+              </div>
+            </div>
+        <% end %>
+      <% end %>
       <%= yield %>
     </main>
   </body>

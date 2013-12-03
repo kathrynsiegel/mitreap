@@ -403,7 +403,7 @@ h6 {
 }
 
 .chart-control {
-	height:250px !important;
+	height:270px !important;
 }
 
 .carousel-dot-control {
@@ -418,14 +418,15 @@ h2.icap {
 }
 
 .must-win-battle-block {
-	margin-top:10px;
-	padding:10px;
-	margin-right:-10px;
-	width:49%;
+	padding:10px 5px 10px 0px;
+}
+
+.padded10-block {
+	padding: 10px;
 }
 
 .icap-block {
-	padding: 10px;
+	padding: 0px 10px 10px 0px;
 }
 
 .pentacle-img {
@@ -434,12 +435,12 @@ h2.icap {
 
 .pentacle-block {
 	padding:0px;
-	margin-left:10px;
 }
 
 .pentacle-img-block {
 	margin-bottom:10px;
 	padding:10px;
+	height: 204px;
 }
 
 .graph-title {
@@ -448,7 +449,7 @@ h2.icap {
 
 .carousel-indicators {
 	width:300px;
-	left:37%;
+	margin-left:-35%;
 }
 
 h3.cap-title {
@@ -457,21 +458,20 @@ h3.cap-title {
 }
 
 .reap-index-block {
-	left:10px;
+	padding:10px 0px 10px 5px;
 }
 
 .catalyst-row-left {
-	padding:10px;
-	margin-top:10px;
+	padding:0px 0px 0px 5px;
 }
 
 .catalyst-title {
 	font-size: 20px;
 }
 
-.catalyst-sub {
-	padding-left:40px;
-	padding-right:40px;
+.listed-p {
+	margin-top:35px !important;
+	margin-bottom:35px !important;
 }
 
 .dashboard-row {
@@ -480,17 +480,13 @@ h3.cap-title {
 }
 
 .custom-metrics-block {
-	padding:10px;
-	margin:0px;
-	margin-left:10px;
-	width:14%;
+	padding:0px 5px 0px 0px;
 }
 
-.adj-height-dash {
-	height: 301px !important;
+.custom-metrics-block-2 {
+	padding:0px 5px 0px 5px;
 }
 
 .ecap-block {
-	padding:10px;
-	margin-left:10px;
+	padding: 0px 0px 0px 10px;
 }
