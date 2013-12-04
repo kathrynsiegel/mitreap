@@ -22,43 +22,59 @@ var hasClass = function(element, cls) {
 
 $(document).ready(function() {
 	$('.partner-country-index').mouseover(function() {
-		jQuery($(this).children()[0]).removeClass('light-blue-reap');
-		jQuery($(this).children()[0]).addClass('pink-reap');
+		if (jQuery($(this).children()[0]).hasClass('light-blue-reap')) {
+			jQuery($(this).children()[0]).removeClass('light-blue-reap');
+			jQuery($(this).children()[0]).addClass('pink-reap');
+		}
 	})
 
 	$('.partner-country-index').mouseout(function() {
-		jQuery($(this).children()[0]).removeClass('pink-reap');
-		jQuery($(this).children()[0]).addClass('light-blue-reap');
+		if (jQuery($(this).children()[0]).hasClass('pink-reap')) {
+			jQuery($(this).children()[0]).removeClass('pink-reap');
+			jQuery($(this).children()[0]).addClass('light-blue-reap');
+		}
 	})
 
 	$('.partner-country-index').mouseover(function() {
-		jQuery($(this).children()[0]).removeClass('dark-blue-reap');
-		jQuery($(this).children()[0]).addClass('red-reap');
+		if (jQuery($(this).children()[0]).hasClass('dark-blue-reap')) {
+			jQuery($(this).children()[0]).removeClass('dark-blue-reap');
+			jQuery($(this).children()[0]).addClass('red-reap');
+		}
 	})
 
 	$('.partner-country-index').mouseout(function() {
-		jQuery($(this).children()[0]).removeClass('red-reap');
-		jQuery($(this).children()[0]).addClass('dark-blue-reap');
+		if (jQuery($(this).children()[0]).hasClass('red-reap')) {
+			jQuery($(this).children()[0]).removeClass('red-reap');
+			jQuery($(this).children()[0]).addClass('dark-blue-reap');
+		}
 	})
 
-	$('.person-holder.pink-reap').mouseover(function() {
-		jQuery($(this).children()[0]).removeClass('pink-reap');
-		jQuery($(this).children()[0]).addClass('light-blue-reap');
+	$('.person-holder').mouseover(function() {
+		if (jQuery($(this).children()[0]).hasClass('pink-reap')) {
+			jQuery($(this).children()[0]).removeClass('pink-reap');
+			jQuery($(this).children()[0]).addClass('light-blue-reap');
+		}
 	})
 
-	$('.person-holder.pink-reap').mouseout(function() {
-		jQuery($(this).children()[0]).removeClass('light-blue-reap');
-		jQuery($(this).children()[0]).addClass('pink-reap');
+	$('.person-holder').mouseout(function() {
+		if (jQuery($(this).children()[0]).hasClass('light-blue-reap')) {
+			jQuery($(this).children()[0]).removeClass('light-blue-reap');
+			jQuery($(this).children()[0]).addClass('pink-reap');
+		}
 	})
 
-	$('.person-holder.red-reap').mouseover(function() {
-		jQuery($(this).children()[0]).removeClass('red-reap');
-		jQuery($(this).children()[0]).addClass('dark-blue-reap');
+	$('.person-holder').mouseover(function() {
+		if (jQuery($(this).children()[0]).hasClass('red-reap')) {
+			jQuery($(this).children()[0]).removeClass('red-reap');
+			jQuery($(this).children()[0]).addClass('dark-blue-reap');
+		}
 	})
 
-	$('.person-holder.red-reap').mouseout(function() {
-		jQuery($(this).children()[0]).removeClass('dark-blue-reap');
-		jQuery($(this).children()[0]).addClass('red-reap');
+	$('.person-holder').mouseout(function() {
+		if (jQuery($(this).children()[0]).hasClass('dark-blue-reap')) {
+			jQuery($(this).children()[0]).removeClass('dark-blue-reap');
+			jQuery($(this).children()[0]).addClass('red-reap');
+		}
 	})
 
 	$('.person-holder').mouseover(function() {
@@ -71,10 +87,18 @@ $(document).ready(function() {
 		jQuery($(this).children()[3]).css('visibility','hidden');
 	})
 
-	$('#partner-regions-link').bind("ajax:after", function(evt, xhr, settings){
-    	window.scroll(0, 1000);
-    })
-
     $('#cohort2show').popover('hide')
+
+    $('#partner-regions-link').bind('ajax:complete', function() {
+	  	window.scroll(0, 1700);
+	});
+
+	$('#our-team-link').bind('ajax:complete', function() {
+	  	window.scroll(0, 2820);
+	});
+
+	$('#contact-us-link').bind('ajax:complete', function() {
+	  	window.scroll(0, 3820);
+	});
 })
 
