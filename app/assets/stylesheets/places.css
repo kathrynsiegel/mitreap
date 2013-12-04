@@ -108,6 +108,42 @@
 	margin-bottom:20px;
 }
 
+.overlay-circle {
+	opacity: .5;
+	position:absolute;
+	z-index:20;
+	right:42px;
+	top:0px;
+	visibility: hidden;
+}
+
+.person-circle {
+	position:relative;
+	z-index: 1;
+}
+
+.person-img {
+	width:160px;
+	height:160px;
+	position:absolute;
+	top:20px;
+	z-index: 10;
+	left:63px;
+}
+
+.person-holder {
+	text-align: center;
+	position:relative;
+}
+
+.partner-country-index {
+	text-align:center;
+}
+
+.partner-country-index-2 {
+	position:relative;
+}
+
 .circle-smaller {
 	border-radius: 50%;
 	width: 150px;
@@ -153,36 +189,52 @@
 	border-left: 1px solid rgb(220, 220, 220);
 }
 
-.partner-country-index {
-	margin-left: 3.49%;
-	margin-right: 3.49%;
-	text-align: center;
+.country-img {
+	top: 30px;
+	height: 65%;
+	left:40%;
+	position:absolute;
+	z-index:21;
 }
 
-.country-img {
-	height:60%;
-	margin-top:20%;
+.country-img-scotland {
+	top: 20px;
+	height: 71%;
+	left:30%;
+	position:absolute;
+	z-index:21;
 }
 
 .country-img-wide {
-	width:60%;
-	margin-top:30%;
+	top: 50px;
+	width: 50%;
+	left:27%;
+	position:absolute;
+	z-index:21;
 }
 
 .country-img-turkey {
-	width:60%;
-	margin-top:39%;
+	top: 50px;
+	width: 50%;
+	left:27%;
+	position:absolute;
+	z-index:21;
 }
 
 .country-img-china {
-	width:80%;
-	margin-top:23%;
+	top: 50px;
+	width: 50%;
+	left:27%;
+	position:absolute;
+	z-index:21;
 }
 
 .country-img-spain {
-	position: relative;
 	top: 50px;
-	width: 72%;
+	width: 50%;
+	left:27%;
+	position:absolute;
+	z-index:21;
 }
 
 .country-row {
@@ -196,11 +248,18 @@
 }
 
 .country-apply-label {
+	position:absolute;
+	color:white;
 	font-size: 20px;
-	color: white;
-	font-weight: bolder;
-	position: relative;
-	top:30%;
+	top: 60px;
+	left: 100px;
+	z-index:22;
+}
+
+.cohort-button {
+	top: 45px;
+	left: -7px;
+	position:absolute !important;
 }
 
 .country-apply-button {
@@ -215,85 +274,123 @@
 }
 
 .bottom-circle-label {
-	position: relative;
-	top: -33px;
-	width: 197px;
-	left: -8%;
+	position: absolute;
+	top: 121px;
+	width: 196px;
+	left: 15.7%;
+	z-index:22;
 }
 
 .bottom-circle-label-0 {
-	position: relative;
-	top: 30px;
+	position: absolute;
+	top: 121px;
 	width: 196px;
-	left: -8%;
+	left: 15.7%;
+	z-index:22;
 }
 
 .bottom-circle-label-1 {
-	position: relative;
-	top: 30px;
+	position: absolute;
+	top: 121px;
 	width: 196px;
-	left: -8%;}
+	left: 15.7%;
+	z-index:22;
+}
 
 .bottom-circle-label-2 {
-	position: relative;
-	top: 10px;
+	position: absolute;
+	top: 121px;
 	width: 196px;
-	left: -8%;
+	left: 15.7%;
+	z-index:22;
 }
 
 .bottom-circle-label-3 {
-	position: relative;
+	position: absolute;
+	top: 121px;
 	width: 196px;
-	left:-7.5%;
+	left: 15.7%;
+	z-index:22;
 }
 
 .bottom-circle-label-4 {
-	position: relative;
-	top: -19px;
+	position: absolute;
+	top: 121px;
 	width: 196px;
-	left: -7.5%;
+	left: 15.7%;
+	z-index:22;
 }
 
-.country-label {
-	position:relative;
-	top:-74px;
+.country-label-nz {
+	position:absolute;
 	color:white;
 	font-size: 20px;
+	top: 134px;
+	left: 102px;
+	z-index:22;
+}
+
+.country-label-scotland {
+	position:absolute;
+	color:white;
+	font-size: 20px;
+	top: 134px;
+	left: 110px;
+	z-index:22;
+}
+
+.country-label-finland {
+	position:absolute;
+	color:white;
+	font-size: 20px;
+	top: 134px;
+	left: 117px;
+	z-index:22;
 }
 
 .country-label-0 {
-	position:relative;
-	top:-13px;
+	position:absolute;
 	color:white;
 	font-size: 20px;
+	top: 134px;
+	left: 87px;
+	z-index:22;
 }
 
 .country-label-1 {
-	position:relative;
-	top:-70px;
+	position:absolute;
 	color:white;
 	font-size: 20px;
+	top: 134px;
+	left: 87px;
+	z-index:22;
 }
 
 .country-label-2 {
-	position:relative;
-	top:-33px;
+	position:absolute;
 	color:white;
 	font-size: 20px;
+	top: 134px;
+	left: 87px;
+	z-index:22;
 }
 
 .country-label-3 {
-	position:relative;
-	top:-42px;
+	position:absolute;
 	color:white;
 	font-size: 20px;
+	top: 134px;
+	left: 87px;
+	z-index:22;
 }
 
 .country-label-4 {
-	position:relative;
-	top:-61px;
+	position:absolute;
 	color:white;
 	font-size: 20px;
+	top: 134px;
+	left: 87px;
+	z-index:22;
 }
 
 .team-member-div {
@@ -348,12 +445,6 @@ h6 {
 	height: 495px;
 }
 
-.person-img {
-	width:94%;
-	position:relative;
-	top:20px;
-}
-
 .white-text {
 	color: white;
 	margin:0px;
@@ -382,9 +473,12 @@ h6 {
 }
 
 .name-label {
-	position:relative;
-	top:-85px;
+	position:absolute;
 	visibility: hidden;
+	z-index:30;
+	top: 82px;
+	width: 150px;
+	margin-left: 53px;
 }
 
 .graph-analytics-block {
@@ -490,3 +584,7 @@ h3.cap-title {
 .ecap-block {
 	padding: 0px 0px 0px 10px;
 }
+
+
+
+
