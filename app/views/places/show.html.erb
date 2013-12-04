@@ -11,7 +11,7 @@
 		</div>
 		<% color = 0 %>
 		<% @place.individuals.each do |individual| %>
-			<div class="team-member-div <%= @colors[color] %>-reap col-sm-1 team-member-name" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<%=individual.title%>. <%=individual.bio%>" data-original-title="" title="" id="individual-<%= @place.individuals.index(individual)%>">
+			<div class="team-member-div <%= @colors[color] %>-reap col-sm-1 team-member-name" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="<%=individual.title%>. <%=individual.bio%>" data-original-title="" title="" id="individual-<%= @place.individuals.index(individual)%>">
 				<h6><%= individual.name %></h6>
 			</div>
 			<% color = (color + 1)%3 %>
