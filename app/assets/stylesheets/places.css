@@ -403,7 +403,7 @@
 
 .team-member-div {
 	height:73px;
-	padding:10px;
+	padding:10px 0px 10px 0px;
 	text-align: center;
 	color:white;
 	margin-left:0px;
@@ -532,17 +532,22 @@ h2.icap {
 }
 
 .pentacle-img {
-	width: 170px;
+	height:65%;
 }
 
 .pentacle-block {
 	padding:0px;
+	height:321px;
 }
 
 .pentacle-img-block {
 	margin-bottom:10px;
 	padding:10px;
-	height: 204px;
+	height: 45%;
+}
+
+.three-industry {
+	height:51.7%;
 }
 
 .graph-title {
@@ -550,8 +555,8 @@ h2.icap {
 }
 
 .carousel-indicators {
-	width:300px;
-	margin-left:-35%;
+	width: 100%;
+	left: 26%;
 }
 
 h3.cap-title {
@@ -591,6 +596,14 @@ h3.cap-title {
 
 .ecap-block {
 	padding: 0px 0px 0px 10px;
+}
+
+.graph-data {
+	width:100% !important;
+}
+
+.catalysts-initiatives {
+	height:682%;
 }
 
 

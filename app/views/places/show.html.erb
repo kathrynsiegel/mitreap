@@ -55,19 +55,19 @@
 					  <div class="carousel-inner chart-control">
 					    <div class="item active">
 							<h4 class="white-title">Patents/year</h4>
-							<canvas id="icap-chart" width="400" height="200"></canvas>
+							<canvas id="icap-chart" class='graph-data' width="400" height="200"></canvas>
 					    </div>
 					    <div class="item center-div">
 							<h4 class="white-title">Published Papers/year</h4>
-							<canvas id="icap-chart2" width="400" height="200"></canvas>
+							<canvas id="icap-chart2" class='graph-data' width="400" height="200"></canvas>
 					    </div>
 					    <div class="item center-div">
 							<h4 class="white-title">STEM Graduates/year</h4>
-							<canvas id="stem-chart" width="400" height="200"></canvas>
+							<canvas id="stem-chart" class='graph-data' width="400" height="200"></canvas>
 						</div>
 						<div class="item center-div">
 							<h4 class="white-title">Gross R&D Expenditure</h4>
-							<canvas id="rd-chart" width="400" height="200"></canvas>
+							<canvas id="rd-chart" class='graph-data' width="400" height="200"></canvas>
 						</div>
 						<div class="item center-div">
 							<h4 class="white-title">Top Three Research Institutions</h4>
@@ -77,7 +77,7 @@
 						</div>
 						<div class="item center-div">
 							<h4 class="white-title">Intellectual Property Protection</h4>
-							<canvas id="iprop-chart" width="400" height="200"></canvas>
+							<canvas id="iprop-chart" class='graph-data' width="400" height="200"></canvas>
 						</div>
 						<div class="item center-div">
 							<h4 class="white-title">Celebrated Regional Innovation</h4>
@@ -85,7 +85,7 @@
 						</div>
 						<div class="item center-div">
 							<h4 class="white-title">GDP per capita</h4>
-							<canvas id="gdpc-chart" width="400" height="200"></canvas>
+							<canvas id="gdpc-chart" class='graph-data' width="400" height="200"></canvas>
 						</div>
 					  </div>
 					</div>
@@ -96,7 +96,7 @@
 					<h3 class='white-text cap-title'>Linkages</h3>
 					<%= image_tag 'reap2.png', class: 'pentacle-img' %>
 				</div>
-				<div class='block-right-edge dark-blue-reap padded10-block'>
+				<div class='three-industry block-right-edge dark-blue-reap padded10-block'>
 					<h4 class="white-title">Top 3 Industry Clusters</h4>
 					<p class="less-padding-bottom white-text">Biotech Innovation Cluster</p>
 					<p class="less-padding-bottom white-text">High Tech Cluster</p>
@@ -122,15 +122,15 @@
 						<div class="carousel-inner chart-control">
 						    <div class="item active">
 								<h4 class="white-title">S&C Corps Incorporated/year</h4>
-								<canvas id="sccorp-chart" width="400" height="200"></canvas>
+								<canvas id="sccorp-chart" class='graph-data' width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
 								<h4 class="white-title">Total Early-Stage Entrepreneurship</h4>
-						    	<canvas id="earlyentrep-chart" width="400" height="200"></canvas>
+						    	<canvas id="earlyentrep-chart" class='graph-data' width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
 						    	<h4 class="white-title">Venture Capital Investments in Region/year</h4>
-						    	<canvas id="vcinv-chart" width="400" height="200"></canvas>
+						    	<canvas id="vcinv-chart" class='graph-data' width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
 						    	<h4 class="white-title">Top 3 business parks, innovation hubs or accelerators</h4>
@@ -138,7 +138,7 @@
 						    </div>
 						    <div class="item">
 						    	<h4 class="white-title">Number of days to start a business</h4>
-						    	<canvas id="busiday-chart" width="400" height="200"></canvas>
+						    	<canvas id="busiday-chart" class='graph-data' width="400" height="200"></canvas>
 						    </div>
 						    <div class='item'>
 								<h4 class="white-title">Celebrated Regional Entrepreneur</h4>
@@ -146,7 +146,7 @@
 							</div>
 						    <div class="item">
 						    	<h4 class="white-title">GDP/capita</h4>
-						    	<canvas id="gdpcap-chart" width="400" height="200"></canvas>
+						    	<canvas id="gdpcap-chart" class='graph-data' width="400" height="200"></canvas>
 						    </div>
 						</div>
 					</div>
@@ -176,11 +176,11 @@
 						    </div>
 						    <div class="item">
 								<h4 class="white-title">$ Invested in University Startups (USD)/year</h4>
-								<canvas id="doluniv-chart" width="400" height="200"></canvas>
+								<canvas id="doluniv-chart" class='graph-data' width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
 						    	<h4 class="white-title"># New PhD Graduates/year</h4>
-						    	<canvas id="phdgrad-chart" width="400" height="200"></canvas>
+						    	<canvas id="phdgrad-chart" class='graph-data' width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
 						    	<h4 class="white-title"># Health-Related Graduates/year</h4>
@@ -209,7 +209,7 @@
 						    </div>
 						    <div class="item">
 								<h4 class="white-title">Total Employment/ year</h4>
-								<canvas id="totemp-chart" width="400" height="200"></canvas>
+								<canvas id="totemp-chart" class='graph-data' width="400" height="200"></canvas>
 						    </div>
 						    <div class="item">
 						    	<h4 class="white-title">Employment by foreign-owned firms/ year</h4>
@@ -220,8 +220,8 @@
 				</div>
 			</div>
 			<div class='catalyst-row-left col-sm-2 white-text'>
-				<div class='dark-blue-reap padded10-block'>
-					<p class="catalyst-title">Catalysts/Initiatives</p>
+				<div class='catalysts-initiatives dark-blue-reap padded10-block'>
+					<p class="catalyst-title">Catalysts / Initiatives</p>
 					<p class='listed-p'><a class='no-decorate-link' href='http://www.callaghaninnovation.govt.nz/'>Callaghan Innovation</a></p>
 					<p class='listed-p'><a class='no-decorate-link' href='http://www.wynyard-quarter.co.nz/Wynyard-Quarter/Home.aspx'>Wynyard Quarter Innovation Precinct</a></p>
 					<p class='listed-p'><a class='no-decorate-link' href='http://kiwilandingpad.com/'>Kiwi Langing Pad and Catapult</a></p>
