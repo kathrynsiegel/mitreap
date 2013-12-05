@@ -192,7 +192,7 @@
 .country-img {
 	top: 30px;
 	height: 65%;
-	left:40%;
+	left:34%;
 	position:absolute;
 	z-index:21;
 }
@@ -205,34 +205,42 @@
 	z-index:21;
 }
 
+.country-img-nz {
+	top: 20px;
+	height: 71%;
+	left:20%;
+	position:absolute;
+	z-index:21;
+}
+
 .country-img-wide {
 	top: 50px;
-	width: 50%;
-	left:27%;
+	width: 72%;
+	left: 16%;
 	position:absolute;
 	z-index:21;
 }
 
 .country-img-turkey {
-	top: 50px;
-	width: 50%;
-	left:27%;
+	top: 62px;
+	width: 70%;
+	left: 15%;
 	position:absolute;
 	z-index:21;
 }
 
 .country-img-china {
 	top: 50px;
-	width: 50%;
-	left:27%;
+	width: 80%;
+	left: 11%;
 	position:absolute;
 	z-index:21;
 }
 
 .country-img-spain {
 	top: 50px;
-	width: 50%;
-	left:27%;
+	width: 65%;
+	left: 20%;
 	position:absolute;
 	z-index:21;
 }
@@ -252,7 +260,7 @@
 	color:white;
 	font-size: 20px;
 	top: 60px;
-	left: 100px;
+	left: 30%;
 	z-index:22;
 }
 
@@ -277,7 +285,7 @@
 	position: absolute;
 	top: 121px;
 	width: 196px;
-	left: 15.7%;
+	left: 1.5%;
 	z-index:22;
 }
 
@@ -285,7 +293,7 @@
 	position: absolute;
 	top: 121px;
 	width: 196px;
-	left: 15.7%;
+	left: 1.5%;
 	z-index:22;
 }
 
@@ -293,7 +301,7 @@
 	position: absolute;
 	top: 121px;
 	width: 196px;
-	left: 15.7%;
+	left: 1.5%;
 	z-index:22;
 }
 
@@ -301,7 +309,7 @@
 	position: absolute;
 	top: 121px;
 	width: 196px;
-	left: 15.7%;
+	left: 1.5%;
 	z-index:22;
 }
 
@@ -309,7 +317,7 @@
 	position: absolute;
 	top: 121px;
 	width: 196px;
-	left: 15.7%;
+	left: 1.5%;
 	z-index:22;
 }
 
@@ -317,7 +325,7 @@
 	position: absolute;
 	top: 121px;
 	width: 196px;
-	left: 15.7%;
+	left: 1.5%;
 	z-index:22;
 }
 
@@ -326,7 +334,7 @@
 	color:white;
 	font-size: 20px;
 	top: 134px;
-	left: 102px;
+	left: 30%;
 	z-index:22;
 }
 
@@ -335,7 +343,7 @@
 	color:white;
 	font-size: 20px;
 	top: 134px;
-	left: 110px;
+	left: 38%;
 	z-index:22;
 }
 
@@ -344,7 +352,7 @@
 	color:white;
 	font-size: 20px;
 	top: 134px;
-	left: 117px;
+	left: 74px;
 	z-index:22;
 }
 
@@ -353,7 +361,7 @@
 	color:white;
 	font-size: 20px;
 	top: 134px;
-	left: 87px;
+	left: 47px;
 	z-index:22;
 }
 
@@ -371,7 +379,7 @@
 	color:white;
 	font-size: 20px;
 	top: 134px;
-	left: 87px;
+	left: 24%;
 	z-index:22;
 }
 
@@ -380,7 +388,7 @@
 	color:white;
 	font-size: 20px;
 	top: 134px;
-	left: 87px;
+	left: 45px;
 	z-index:22;
 }
 
@@ -389,7 +397,8 @@
 	color:white;
 	font-size: 20px;
 	top: 134px;
-	left: 87px;
+	left: 40px;
+	width:120px;
 	z-index:22;
 }
 
