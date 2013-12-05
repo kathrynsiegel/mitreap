@@ -4,7 +4,7 @@ Mitreap::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root to: 'places#index'
-  get '/contact', to: "static_pages#contact"
+  post '/contact', to: "static_pages#contact"
   get '/advantage', to: "static_pages#advantage"
   get '/about', to: "static_pages#about"
   get '/apply', to: "static_pages#apply"

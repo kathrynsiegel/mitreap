@@ -1,5 +1,10 @@
 class StaticPagesController < ApplicationController
 	def contact
+		ContactMailer.contact_email(params[:first_name],
+			params[:last_name],
+			params[:email],
+			params[:body]).deliver
+		redirect_to '/'
 	end
 
 	def advantage

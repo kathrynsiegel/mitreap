@@ -214,21 +214,21 @@
 <div id="bottom-info-div" class="gray-reap contact-us">
 	<div class="container">
 		<h2 class="white-text padded-contact">Contact Us</h2>
-		<%= form_tag '/contact/submit' do |f| %>
+		<%= form_tag '/contact' do |f| %>
 			<div class="row col-sm-12">
 				<div class="col-sm-3">
-					<%= text_field_tag 'query', nil, placeholder: 'First Name', class: 'form-control' %>
+					<%= text_field_tag 'first_name', nil, placeholder: 'First Name', class: 'form-control' %>
 				</div>
 				<div class="col-sm-3">
-					<%= text_field_tag 'query', nil, placeholder: 'Last Name', class: 'form-control' %>
+					<%= text_field_tag 'last_name', nil, placeholder: 'Last Name', class: 'form-control' %>
 				</div>
 				<div class="col-sm-6">
-					<%= text_field_tag 'query', nil, placeholder: 'Email', class: 'form-control' %>
+					<%= text_field_tag 'email', nil, placeholder: 'Email', class: 'form-control' %>
 				</div>
 			</div>
 			<div class="row padded-contact col-sm-12">
 				<div class="col-sm-12">
-					<%= text_area_tag 'query', nil, class: 'form-control text-contact-form' %>
+					<%= text_area_tag 'body', nil, class: 'form-control text-contact-form' %>
 				</div>
 			</div>
 			<div class="row col-sm-12 submit-button-row">
