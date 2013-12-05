@@ -112,7 +112,6 @@
 	opacity: .5;
 	position:absolute;
 	z-index:20;
-	right:42px;
 	top:0px;
 	visibility: hidden;
 }
@@ -128,7 +127,7 @@
 	position:absolute;
 	top:20px;
 	z-index: 10;
-	left:63px;
+	left:20px;
 }
 
 .person-holder {
@@ -487,7 +486,7 @@ h6 {
 	z-index:30;
 	top: 82px;
 	width: 150px;
-	margin-left: 53px;
+	margin-left: 25px;
 }
 
 .graph-analytics-block {

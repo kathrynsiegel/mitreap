@@ -78,13 +78,13 @@ $(document).ready(function() {
 	})
 
 	$('.person-holder').mouseover(function() {
-		jQuery($(this).children()[2]).css('visibility','visible');	
-		jQuery($(this).children()[3]).css('visibility','visible');		
+		jQuery(jQuery($(this).children()[0]).children()[1]).css('visibility','visible');	
+		jQuery(jQuery($(this).children()[0]).children()[2]).css('visibility','visible');		
 	})
 
 	$('.person-holder').mouseout(function() {
-		jQuery($(this).children()[2]).css('visibility','hidden');
-		jQuery($(this).children()[3]).css('visibility','hidden');
+		jQuery(jQuery($(this).children()[0]).children()[1]).css('visibility','hidden');
+		jQuery(jQuery($(this).children()[0]).children()[2]).css('visibility','hidden');
 	})
 
     $('#cohort2show').popover('hide')
