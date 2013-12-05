@@ -176,3 +176,20 @@ a.no-decorate-link {
 	text-align: center;
 }
 
+.who-circle {
+	margin-top:25px;
+	width:180px;
+}
+
+.why-circle {
+	margin-top: 50px;
+	margin-right: 30px;
+	width:180px;
+}
+
+.how-circle {
+	width: 150px;
+	margin-top: 50px;
+}
+
+

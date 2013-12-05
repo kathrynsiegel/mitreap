@@ -88,17 +88,5 @@ $(document).ready(function() {
 	})
 
     $('#cohort2show').popover('hide')
-
-    $('#partner-regions-link').bind('ajax:complete', function() {
-	  	window.scroll(0, 1700);
-	});
-
-	$('#our-team-link').bind('ajax:complete', function() {
-	  	window.scroll(0, 2820);
-	});
-
-	$('#contact-us-link').bind('ajax:complete', function() {
-	  	window.scroll(0, 3820);
-	});
 })
 
