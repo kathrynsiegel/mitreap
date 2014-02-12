@@ -245,7 +245,7 @@
 }
 
 .country-row {
-	margin:auto;
+	margin:0px auto 20px auto;
 }
 
 .country-header-row {
@@ -284,7 +284,7 @@
 	position: absolute;
 	top: 121px;
 	width: 196px;
-	left: 1.5%;
+	left: 0.8%;
 	z-index:22;
 }
 
@@ -292,113 +292,60 @@
 	position: absolute;
 	top: 121px;
 	width: 196px;
-	left: 1.5%;
+	left: 0.8%;
 	z-index:22;
 }
 
-.bottom-circle-label-1 {
-	position: absolute;
-	top: 121px;
-	width: 196px;
-	left: 1.5%;
-	z-index:22;
-}
-
-.bottom-circle-label-2 {
-	position: absolute;
-	top: 121px;
-	width: 196px;
-	left: 1.5%;
-	z-index:22;
-}
-
-.bottom-circle-label-3 {
-	position: absolute;
-	top: 121px;
-	width: 196px;
-	left: 1.5%;
-	z-index:22;
-}
-
-.bottom-circle-label-4 {
-	position: absolute;
-	top: 121px;
-	width: 196px;
-	left: 1.5%;
+.country-label-spec {
+	position:absolute;
+	color:white;
+	font-size: 20px;
+	top: 134px;
 	z-index:22;
 }
 
 .country-label-nz {
-	position:absolute;
-	color:white;
-	font-size: 20px;
-	top: 134px;
 	left: 30%;
-	z-index:22;
 }
 
 .country-label-scotland {
-	position:absolute;
-	color:white;
-	font-size: 20px;
-	top: 134px;
-	left: 38%;
-	z-index:22;
+	left: 36%;
 }
 
 .country-label-finland {
-	position:absolute;
-	color:white;
-	font-size: 20px;
-	top: 134px;
 	left: 74px;
-	z-index:22;
 }
 
-.country-label-0 {
-	position:absolute;
-	color:white;
-	font-size: 20px;
-	top: 134px;
+.country-label-qatar {
+	left: 80px;
+}
+
+.country-label-spain {
 	left: 47px;
-	z-index:22;
 }
 
-.country-label-1 {
-	position:absolute;
-	color:white;
-	font-size: 20px;
-	top: 134px;
-	left: 87px;
-	z-index:22;
-}
-
-.country-label-2 {
-	position:absolute;
-	color:white;
-	font-size: 20px;
-	top: 134px;
+.country-label-turkey {
 	left: 24%;
-	z-index:22;
 }
 
 .country-label-3 {
-	position:absolute;
-	color:white;
-	font-size: 20px;
-	top: 134px;
 	left: 45px;
-	z-index:22;
 }
 
-.country-label-4 {
-	position:absolute;
-	color:white;
-	font-size: 20px;
-	top: 134px;
+.country-label-china {
 	left: 40px;
-	width:120px;
-	z-index:22;
+}
+
+.country-label-2 {
+	left: 11%;
+}
+
+.country-label-spain {
+	left:51px;
+}
+
+.country-label-brazil {
+	left:34px;
 }
 
 .team-member-div {

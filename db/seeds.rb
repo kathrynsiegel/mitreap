@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-spain = Place.create(name: 'Spain (Andalucia)')
+spain = Place.create(name: 'Andalucia, Spain')
 Individual.create(place: spain, 
 	name: 'Lourdes Nunez Müller', 
 	title: 'Director of Knowledge Transfer at Granada Health Tech Park (PTS Granada)', 
@@ -76,7 +76,7 @@ Individual.create(place:finland,
 	description: "The primary motivation underpinning our successful teams and projects has been the benefits of research for society. This requires both close collaboration with entrepreneurs, and fostering of academic entrepreneurship. I am supporting the researchers toward this direction.",
 	bio: "Head of planning & development of the Agora Center, University of Jyväskylä. The AC is an institute for ambitious co-creation in the area of interdisciplinary human technology + human centric solutions research and development. The Agora Center creatively combines research of high international standard, in a range of scientific disciplines, with the expertise derived from its diverse partner network. The Center is grounded in a shared vision of developing the future knowledge society from a human-centric point of view.")
 
-china = Place.create(name: 'China (Hangzhou)')
+china = Place.create(name: 'Hangzhou, China')
 Individual.create(place:china,
 	name: 'Jiang Wei',
 	title: '',
@@ -186,7 +186,7 @@ Individual.create(place:scotland,
 	description: 'The AWS management team has extensive experience of offshore engineering and renewable energy projects both in the UK and overseas. Headed by Chief Executive Simon Grey, the teams are based in Inverness and supported by a small number of firms who provide specialist services such as legal and financial advice, engineering consultancy and PR & communications.',
 	bio: 'Simon is a chartered engineer with 28 years experience of power generation projects and business management of which 22 years have been in the renewables sector. He is responsible for the day-to-day running of the company.')
 
-istanbul = Place.create(name: 'Turkey (Istanbul)',
+istanbul = Place.create(name: 'Istanbul, Turkey',
 	:key_challenge => 'Istanbul aims to become an innovation-hub.',
 	:key_challenge_index => '80.00',
     :key_challenge_change => '14.25%')
@@ -234,7 +234,7 @@ Individual.create(place:istanbul,
 	description: "Teaching and research in entrepreneurship.",
 	bio: "Dr. Ahmet Murat Fiş got his BA degree in Bogazici University, Istanbul, Turkey and MBA degree in Oklahoma State University, Stillwater, USA. After his MBA, he worked for industry with various responsibilities in various departments such as the Office of the President, Human Resources, Quality, and Information Systems. After seven years of industry experience in which he also attended a two year Management Trainee Program, he began the PhD Program at Sabanci University, Istanbul, Turkey. He got his PhD degree in January, 2009. Besides some teaching experience as a research assistant, he has presented several papers and posters in various local and international conferences. His research interests focus on corporate entrepreneurship, entrepreneurship, and TQM in general. He also serves as assessor/chief assessor for Kalder in the Turkish National Quality Award since 1999.")
 
-mexico = Place.create(name: 'Mexico (Veracruz)',
+mexico = Place.create(name: 'Veracruz, Mexico',
 	:key_challenge => 'Mexico aims to become an innovation-hub.',
 	:key_challenge_index => '80.00',
     :key_challenge_change => '14.25%')
@@ -287,3 +287,156 @@ Individual.create(place:mexico,
 	location: '',
 	description: "",
 	bio: "")
+
+morocco = Place.create(name: 'Morocco',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+london = Place.create(name: 'London, United Kingdom',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+qatar = Place.create(name: 'Qatar',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+moscow = Place.create(name: 'Moscow, Russia',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+puerto_rico = Place.create(name: 'Puerto Rico',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+valencia = Place.create(name: 'Valencia, Spain',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+singapore = Place.create(name: 'Singapore',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+rio = Place.create(name: 'Rio de Janeiro, Brazil',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+seoul = Place.create(name: 'Seoul, South Korea',
+	:key_challenge => '',
+	:key_challenge_index => '',
+    :key_challenge_change => '')
+
+
+NewsArticle.create(link: 'http://b.globe.com/HDVJwA',
+	title: 'How Female Entrepreneurs Can Raise VC Funding',
+	author: 'Fiona Murray, MIT Professor',
+	picture: 'http://c.o0bg.com/rf/image_960w/Boston/2011-2020/2013/10/25/BostonGlobe.com/Magazine/Images/LessStylish-GlobeIllo.jpg')
+
+NewsArticle.create(link: 'http://bit.ly/1b5BdNn',
+	title:'Professor Fiona Murray is Named Associate Dean of Innovation and Co-Director of the MIT Innovation Initiative',
+	author: 'MIT News Office',
+	picture: 'http://img.mit.edu/newsoffice/images/article_images/20131017093404-0.jpg')
+
+NewsArticle.create(link: 'http://disciplinedentrepreneurship.com/',
+	title:'Disciplined Entrepreneurship: 24 Steps to a Successful Startup',
+	author: 'Bill Aulet',
+	picture: 'http://www.disciplinedentrepreneurship.com/photos/practical300.png')
+
+NewsArticle.create(link: 'http://mitsloanexperts.mit.edu/teaching-entrepreneurship-is-in-the-startup-phase/',
+	title:'Teaching Entrepreneurship in the Startup Phase',
+	author: 'Bill Aulet',
+	picture: 'http://www.disciplinedentrepreneurship.com/photos/rigorous300.png')
+
+NewsArticle.create(link: 'http://www.forbes.com/sites/groupthink/2013/07/10/six-whopping-lies-told-about-entrepreneurs-sometimes-by-entrepreneurs-themselves/',
+	title:'Six Whopping Lies Told About Entrepreneurs … Sometimes By Entrepreneurs Themselves',
+	author: 'Bill Aulet',
+	picture: 'http://www.disciplinedentrepreneurship.com/photos/proven300.png')
+
+NewsArticle.create(link: 'http://www.kauffman.org/newsroom/2013/05/a-tale-of-two-entrepreneurs-new-kauffman-paper-highlights-different-types-and-their-roles-in-economy',
+	title:'A Tale of Two Entrepreneurs: Understanding Differences in the Types of Entrepreneurship in the Economy',
+	author: 'Rossana Weitekamp and Barbara Pruitt',
+	picture: 'http://www.europeanbusinessreview.com/worldfinancialreview.com/wp-content/uploads/2010/12/entrepreneurship-china1.jpg')
+
+NewsArticle.create(link: 'http://www.bostonglobe.com/opinion/2012/10/16/not-all-jobs-are-created-equal/tO1N2PsdJne6Qaw9MYIiYN/story.html',
+	title:'Not all jobs are created equal',
+	author: 'Bill Aulet and Fiona Murray',
+	picture: 'http://www.washingtonpost.com/rf/image_606w/2010-2019/WashingtonPost/2012/01/03/National-Economy/Images/AP110806135684.jpg')
+
+NewsArticle.create(link: 'http://www.huffingtonpost.com/william-aulet/10-ways-our-schools-can-b_b_766477.html',
+	title:'10 Steps to Improve Entrepreneurship Education',
+	author: 'Bill Aulet and Fiona Murray',
+	picture: 'http://i.huffpost.com/gadgets/slideshows/11964/slide_11964_159286_large.jpg?1392157540755')
+
+NewsArticle.create(link: 'http://online.wsj.com/news/articles/SB10001424127887324324404579045312867464966',
+	title:'Lessons in Entrepreneurship: Aulet Offers Steps for Potential Business Owners',
+	author: 'Melissa Korn',
+	picture: 'http://si.wsj.net/public/resources/images/MK-CG039_aulet_D_20130904173100.jpg')
+
+NewsArticle.create(link: 'http://www.bostonglobe.com/business/2013/08/11/mit-bill-aulet-charts-steps-start-success/bfwVKBE7TT4LceDrh1zb8O/story.html',
+	title:'Entrepreneurship can be taught, writer says',
+	author: 'Michael B. Farrell',
+	picture: 'http://c.o0bg.com/rf/image_371w/Boston/2011-2020/2013/08/07/BostonGlobe.com/Business/Images/suarez_12aulet_biz_002.jpg')
+
+NewsArticle.create(link: 'http://www.bostonglobe.com/business/2013/04/30/mit-launches-global-start-accelerator/R7XzbE6fGDrrugeb7foIJL/story.html',
+	title:'MIT entrepreneurs program to include six foreign teams',
+	author: 'Michael B. Farrell',
+	picture: 'http://static.squarespace.com/static/523280b5e4b0d1c20a17c18e/5259f1a8e4b005ad72220c76/5259f1bfe4b005ad7222111b/1378600197000/wpid-imag0584.jpg%3Fformat%3Doriginal')
+
+NewsArticle.create(link: 'http://www.bostonmagazine.com/2012/10/mit-important-university-world-harvard/',
+	title:'How MIT Became the Most Important University in the World',
+	author: 'Chris Vogel',
+	picture: 'http://www.bostonmagazine.com//wp-content/uploads/2012/10/mit-1.jpg')
+
+NewsArticle.create(link: 'http://www.boston.com/news/science/articles/2010/05/16/more_than_the_money/',
+	title:'More than the money: MIT Clean Energy contest isn’t just about the prize; it’s about cultivating entrepreneurs',
+	author: 'Robert Gavin',
+	picture: 'http://cache.boston.com/resize/bonzai-fba/Globe_Photo/2010/05/15/1273913123_7840/539w.jpg')
+
+NewsArticle.create(link: '/reap_advantage.pdf',
+	title:'The REAP Advantage',
+	author: 'Program Material',
+	picture: '/assets/advantage.png')
+
+NewsArticle.create(link: '/reap_FAQ.pdf',
+	title:'FAQ',
+	author: 'Program Material',
+	picture: '/assets/faq.png')
+
+NewsArticle.create(link: '/REAP_Ideal_Team.pdf',
+	title:'The Ideal REAP Team',
+	author: 'Program Material',
+	picture: '/assets/ideal_team.png')
+
+NewsArticle.create(link: '/brochure.pdf',
+	title:'Brochure',
+	author: 'Program Material',
+	picture: '/assets/acceleration.png')
+
+NewsArticle.create(link: '/REAP_Team_Assembly_Guide.pdf',
+	title:'Team Assembly Guide',
+	author: 'Program Material',
+	picture: '/assets/team.png')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

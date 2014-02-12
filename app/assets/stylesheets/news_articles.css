@@ -5,3 +5,46 @@
 .newsfeed-container {
 	text-align: center;
 }
+
+.article-container {
+	padding:20px;
+}
+
+.article-inner {
+	padding: 5px;
+	background-color:white;
+	border-radius: 2px;
+	height:180px;
+	box-shadow: 0 1px 1px #999999;
+	-moz-box-shadow: 0 1px 1px #999999;
+	-webkit-box-shadow: 0 1px 1px #999999;
+	position:relative;
+}
+
+.article-image-height {
+	height:100%;
+}
+.article-image-width {
+	width:100%;
+}
+.article-image-container {
+	height:95%;
+	width:96%;
+	overflow:hidden;
+	position:absolute;
+}
+
+.article-description {
+	position:absolute;
+	bottom:5px;
+	text-align: center;
+	padding:5px 5px 10px 5px;
+	width:96%;
+	text-decoration:none;
+	color:white;
+	background-color:rgba(0,0,0,.5);
+}
+
+.article-title {
+	font-weight: 800;
+}

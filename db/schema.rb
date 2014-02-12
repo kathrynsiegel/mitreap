@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131202185151) do
+ActiveRecord::Schema.define(version: 20140211220937) do
 
   create_table "apps", force: true do |t|
     t.string   "region_name"
@@ -66,6 +66,15 @@ ActiveRecord::Schema.define(version: 20131202185151) do
     t.string   "location"
     t.text     "bio"
     t.integer  "place_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "news_articles", force: true do |t|
+    t.string   "link"
+    t.string   "title"
+    t.string   "author"
+    t.string   "picture"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
