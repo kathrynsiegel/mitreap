@@ -90,28 +90,6 @@ $(document).ready(function() {
 		onAnimationComplete : null
 		
 	}
-
-	// var ctpop = document.getElementById("population-chart");
-	// if (ctpop) {
-	// 	xlabels = [];
-	// 	if (document.getElementById("New Zealand")) {
-	// 		xlabels = ["2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012"];
-	// 	}
-	// 	var data_population = {
-
-	// 		labels : xlabels,
-	// 		datasets : [
-	// 			{
-	// 				fillColor : "rgba(220,220,220,0.5)",
-	// 				strokeColor : "rgba(220,220,220,1)",
-	// 				pointColor : "rgba(220,220,220,1)",
-	// 				pointStrokeColor : "#fff",
-	// 				data : [3857700, 3880500, 3948500, 4027200, 4087500, 4133900, 4184600, 4228300, 4268900, 4315800, 4367800, 4405200, 4433100]
-	// 			}
-	// 		]
-	// 	}
-	// 	var popChart = new Chart(ctpop.getContext("2d")).Line(data_population,defaults);
-	// }
 	
 	var cticap = document.getElementById("icap-chart");
 	if (cticap) {
@@ -146,7 +124,7 @@ $(document).ready(function() {
 			ydata = [18.25, 16.976, 39.556, 78.505, 78.471, 133.783, 176.529, 225.126, 233.301, 396.264, 515.263];
 		}
 
-		else if (document.getElementById("Andalucia (Spain)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2000","2001", "2002","2003","2004","2005","2006","2007","2008","2009","2010"];
 			ydata = [43.271, 68.408, 74.263, 65.688, 83.924, 103.829, 108.655, 130.269, 159.463, 209.126, 178.991];
 		}
@@ -186,7 +164,7 @@ $(document).ready(function() {
 			ydata = [0.583, 1.5, 4.5, 0.2, 1.367, 0.25, 3.093, 3.2, 3.5, 0.583];
 		}
 
-		else if (document.getElementById("Andalucia (Spain)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2000","2001", "2002","2003","2004","2005","2006","2007","2008","2009","2010"];
 			ydata = [14795.2, 15323, 16062.3, 16099.3, 17025, 18345.5, 19525.8, 20993.3, 21509.1, 21542.6];
 		}
@@ -236,7 +214,7 @@ $(document).ready(function() {
 			xlabels = ["2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011"];
 			ydata = [28634, 32556, 33986, 33792, 34690, 36958, 38918, 44462, 49156, 53176, 50478, 61862];
 		}
-		else if (document.getElementById("Spain (Andalucia)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011"];
 			ydata = [43358, 45506, 43656, 43214, 42100, 40800, 41228, 39282, 42210, 43222, 45728, 50748];
 		}
@@ -282,7 +260,7 @@ $(document).ready(function() {
 			ydata = [0.37273, 0.39433, 0.43617, 0.39614, 0.39964, 0.41183, 0.38612, 0.37019, 0.35059, 0.395];
 		}
 		
-		else if (document.getElementById("Andalucia (Spain)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2000","2001", "2002","2003","2004","2005","2006","2007","2008","2009", "2010"];
 			ydata = [.65, .59, .6, .85, .76, .84, .89, 1.02, 1.03, 1.1, 1.21];
 		}
@@ -332,7 +310,7 @@ $(document).ready(function() {
 			xlabels = ["2000", "2001","2002","2003","2004","2005","2006","2007","2008","2009","2010"];
 			ydata = [0.84343, 0.84902, 0.72518, 0.72241, 0.58016, 0.59104, 0.51831, 0.48311, 0.52594, 0.53779, 0.47909];
 		}
-		else if(document.getElementById("Spain (Andalucia)")) {
+		else if(document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2000", "2001","2002","2003","2004","2005","2006","2007","2008","2009","2010"];
 			ydata = [1.21, 1.1, 1.03, 1.02, 0.89, 0.84, 0.76, 0.85, 0.6, 0.59, 0.65];
 		}
@@ -352,7 +330,7 @@ $(document).ready(function() {
 			xlabels = ["2001","2002","2003","2004","2005","2006","2007","2008","2009","2010"];
 			ydata = [2.915, 2.7618, 2.8, 2.75097, 2.96, 3.1455, 3.58084, 2.59151, 2.73739, 2.47025, 2.94156];
 		}
-		else if(document.getElementById("Andalucia (Spain)")) {
+		else if(document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2000", "2001","2002","2003","2004","2005","2006","2007","2008","2009","2010"];
 			ydata = [5.32392, 4.48528, 4.72727, 4.54317, 4.37495, 4.85122, 5.03478, 4.49861, 4.15158, 4.32492, 3.88928];
 		}
@@ -392,7 +370,7 @@ $(document).ready(function() {
 			xlabels = ["2000","2001", "2002","2003","2004","2005","2006","2007","2008","2009","2010", "2011"];
 			ydata = [14615.53, 13577.11, 12460.79, 13107.55, 12891.57, 12116.07, 11116.96, 9335.53, 8255.23, 7803.01, 12547, 13575];
 		}
-		else if (document.getElementById("Spain (Andalucia)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2000","2001", "2002","2003","2004","2005","2006","2007","2008","2009","2010"];
 			ydata = [15763, 16756, 18108, 18992, 20144, 21427, 23692, 25122, 25691, 24576, 24087];
 		}
@@ -456,7 +434,7 @@ $(document).ready(function() {
 			xlabels = ["2004","2005","2006","2007","2008","2009","2010","2011"];
 			ydata = [331265, 355520, 346968, 381189, 326013, 340170, 379628, 429363];
 		}
-		else if (document.getElementById("Andalucia (Spain)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2004","2005","2006","2007","2008","2009","2010","2011"];
 			ydata = [331265, 355520, 346968, 381189, 326013, 340170, 379628, 429363];
 		}
@@ -500,7 +478,7 @@ $(document).ready(function() {
 			xlabels = ["2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011"];
 			ydata = [13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13];
 		}
-		else if (document.getElementById("Spain (Andalucia)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011"];
 			ydata = [47, 47, 47, 47, 47, 47, 114, 114, 114, 114, 114];
 		}
@@ -555,7 +533,7 @@ $(document).ready(function() {
 			xlabels = ["2000", "2001", "2002", "2003", "2004", "2005", "2006","2007","2008","2009","2010", "2011"];
 			ydata = [24095, 25483, 26630, 27694, 29653, 31022, 33357, 34258, 34605, 33336, 34215];
 		}
-		if (document.getElementById("Spain (Andalucia)")) {
+		if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2000", "2001", "2002", "2003", "2004", "2005", "2006","2007","2008","2009","2010", "2011"];
 			ydata = [15763, 16756, 18108, 18992, 20144, 21427, 23692, 25122, 25691, 24576, 24087];
 		}
@@ -606,7 +584,7 @@ $(document).ready(function() {
 			xlabels = ["2003", "2004", "2005", "2006","2007","2008","2009","2010", "2011", "2012", "2013"];
 			ydata = [13, 11, 12, 15, 11, 19, 12, 11, 12, 22, 12];
 		}
-		else if (document.getElementById("Spain (Andalucia)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2003", "2004", "2005", "2006","2007","2008","2009","2010", "2011", "2012", "2013"];
 			ydata = [9, 2, 4, 2, 3, 2, 4, 7, 5, 3, 3];
 		}
@@ -657,7 +635,7 @@ $(document).ready(function() {
 			xlabels = [];
 			ydata = [];
 		}
-		else if (document.getElementById("Spain (Andalucia)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = [];
 			ydata = [];
 		}
@@ -704,7 +682,7 @@ $(document).ready(function() {
 			xlabels = ["2007", "2008", "2009", "2010", "2011", "2012"];
 			ydata = [2.492, 2.531, 2.457, 2.447, 2.474, 2.483];
 		}
-		else if (document.getElementById("Spain (Andalucia)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2007", "2008", "2009", "2010", "2011", "2012"];
 			ydata = [20.356, 20.258, 18.888, 18.457, 18.105, 17.282];
 		}
@@ -759,7 +737,7 @@ $(document).ready(function() {
 			xlabels = ["2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011"];
 			ydata = [6.5, 5.4, 6.4, 6.2, 6.2, 5.8, 5.5, 5.9, 5.7, 6.4, 7.3];
 		}
-		else if (document.getElementById("Spain (Andalucia)")) {
+		else if (document.getElementById("Andalucia, Spain")) {
 			xlabels = ["2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011"];
 			ydata = [6.3, 4.6, 6.6, 5.1, 5.7, 7.3, 7.6, 7, 5.1, 4.3, 5.8];
 		}

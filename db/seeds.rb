@@ -239,50 +239,19 @@ mexico = Place.create(name: 'Veracruz, Mexico',
 	:key_challenge_index => '80.00',
     :key_challenge_change => '14.25%')
 Individual.create(place:mexico,
-	name: 'Abraham C. Rodriguez Garcia',
-	title: 'Managing Director of Technology Innovation – State Government of Veracruz',
-	location: 'Xalapa , Veracruz, Mexico',
-	description: "Basically, three things: 1. Co-generate demand for new information and communication technologies in our region. 2. Enable productive use of ICTs in public sector. 3. Promote simple, useful and actionable public policies to regulate ICTs offer/demand. Browse our initiatives for more insight!",
-	bio: "Focus on social prosperity creation though innovation and technology, listed in the 100 Best CIOs of Mexico in 2012, with entrepreneurial spirit has designed and deployed e-government programs and digital marketing projects for both public and private sectors; which have received national awards as most innovative solutions for country's development. Currently Chairman of CIAPEM, a non-profit organization dedicated to facilitate knowledge transfer within the 32 states and 2443 municipalities of Mexico in order to promote broader inclusion to the global information society.")
-Individual.create(place:mexico,
 	name: 'Leonel Azuela',
 	title: '',
 	location: 'Mexico City, Mexico',
 	description: "",
 	bio: "")
 Individual.create(place:mexico,
-	name: 'Farid Alfredo Bielma Lopez',
-	title: 'Founder at COSITMX',
-	location: 'Coatzacoalcos, Veracruz, Mexico',
-	description: "Develop initiatives to promote entrepreneurship ecosystem.",
-	bio: "Farid Alfredo Bielma López currently chairs COSITMX, an organization that cultivates technological entrepreneurship in southeastern Veracruz.
-COSITMX coordinated the Internet2 project at the Higher Technological Institute of Coatzacoalcos, Visiflex for the Higher Technological Institute of Veracruz, the job portal for the Coatzacoalcos municipal government and developed a budget system for the Secretary of Social Development of Distrito Federal.")
-Individual.create(place:mexico,
-	name: 'Jorge Soto',
-	title: 'Co-Founder and CSO at Citivox',
-	location: 'Mexico City, Mexico',
-	description: "",
-	bio: "")
-Individual.create(place:mexico,
-	name: 'Jorge Miguel Rodriguez Ramirez',
-	title: 'General Director at Eondive Group',
-	location: 'Xalapa , Veracruz, Mexico',
-	description: "",
-	bio: "")
-Individual.create(place:mexico,
-	name: 'Ramon Parra',
+	name: 'Victor Hugo Moctezuma Aguirre',
 	title: '',
-	location: '',
+	location: 'Veracruz, Mexico',
 	description: "",
 	bio: "")
 Individual.create(place:mexico,
-	name: 'Ben Cessa',
-	title: 'Developer',
-	location: 'Fortin de las Flores, Veracruz, Mexico',
-	description: "",
-	bio: "Born September 25th, 1984. Started designing, programming and in general developing about 7 years ago, being doing it ever since. Founded Pixative, a technology focused startup, and am now partnering with Telefonica and others in the development of a couple of projects.")
-Individual.create(place:mexico,
-	name: 'Javier De la Fuente',
+	name: 'José Antonio Mansur',
 	title: '',
 	location: '',
 	description: "",
@@ -334,6 +303,42 @@ seoul = Place.create(name: 'Seoul, South Korea',
     :key_challenge_change => '')
 
 
+
+NewsArticle.create(link: '/reap_advantage.pdf',
+	title:'The REAP Advantage',
+	author: 'Program Material',
+	picture: '/assets/advantage.png')
+
+NewsArticle.create(link: '/reap_FAQ.pdf',
+	title:'FAQ',
+	author: 'Program Material',
+	picture: '/assets/faq.png')
+
+NewsArticle.create(link: '/REAP_Ideal_Team.pdf',
+	title:'The Ideal REAP Team',
+	author: 'Program Material',
+	picture: '/assets/ideal_team.png')
+
+NewsArticle.create(link: '/brochure.pdf',
+	title:'Brochure',
+	author: 'Program Material',
+	picture: '/assets/acceleration.png')
+
+NewsArticle.create(link: '/REAP_Team_Assembly_Guide.pdf',
+	title:'Team Assembly Guide',
+	author: 'Program Material',
+	picture: '/assets/team.png')
+
+NewsArticle.create(link: 'https://www.innovationpolicyplatform.org/',
+	title:'The Innovation Policy Platform',
+	author: 'Program Material',
+	picture: '/assets/the_ipp.png')
+
+NewsArticle.create(link: 'http://mitgsw.org/2014/?utm_source=MIT+REAP+-+Faculty%2FStaff&utm_campaign=fe3177c365-MIT_REAP_Newsletter_14_2_2014&utm_medium=email&utm_term=0_465d954574-fe3177c365-163225593',
+	title:'Team Assembly Guide',
+	author: 'Program Material',
+	picture: '/assets/team.png')
+
 NewsArticle.create(link: 'http://b.globe.com/HDVJwA',
 	title: 'How Female Entrepreneurs Can Raise VC Funding',
 	author: 'Fiona Murray, MIT Professor',
@@ -362,7 +367,7 @@ NewsArticle.create(link: 'http://www.forbes.com/sites/groupthink/2013/07/10/six-
 NewsArticle.create(link: 'http://www.kauffman.org/newsroom/2013/05/a-tale-of-two-entrepreneurs-new-kauffman-paper-highlights-different-types-and-their-roles-in-economy',
 	title:'A Tale of Two Entrepreneurs: Understanding Differences in the Types of Entrepreneurship in the Economy',
 	author: 'Rossana Weitekamp and Barbara Pruitt',
-	picture: 'http://www.europeanbusinessreview.com/worldfinancialreview.com/wp-content/uploads/2010/12/entrepreneurship-china1.jpg')
+	picture: 'http://www.kauffman.org/~/media/kauffman_org/home%20panels/home_panel_ednew.jpg')
 
 NewsArticle.create(link: 'http://www.bostonglobe.com/opinion/2012/10/16/not-all-jobs-are-created-equal/tO1N2PsdJne6Qaw9MYIiYN/story.html',
 	title:'Not all jobs are created equal',
@@ -399,32 +404,40 @@ NewsArticle.create(link: 'http://www.boston.com/news/science/articles/2010/05/16
 	author: 'Robert Gavin',
 	picture: 'http://cache.boston.com/resize/bonzai-fba/Globe_Photo/2010/05/15/1273913123_7840/539w.jpg')
 
-NewsArticle.create(link: '/reap_advantage.pdf',
-	title:'The REAP Advantage',
-	author: 'Program Material',
-	picture: '/assets/advantage.png')
+NewsArticle.create(link: 'http://newsoffice.mit.edu/2014/gala-dinner-celebrates-innovation-diplomacy-at-mit?utm_source=MIT+REAP+-+Faculty%2FStaff&utm_campaign=fe3177c365-MIT_REAP_Newsletter_14_2_2014&utm_medium=email&utm_term=0_465d954574-fe3177c365-163225593',
+	title:'Gala dinner celebrates \'innovation diplomacy\' at MIT',
+	author: 'Amy MacMillan',
+	picture: 'http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/news_article_image_top_slideshow/public/images/2014-murray.jpg?itok=Htspqp9s')
 
-NewsArticle.create(link: '/reap_FAQ.pdf',
-	title:'FAQ',
-	author: 'Program Material',
-	picture: '/assets/faq.png')
+NewsArticle.create(link: 'http://live.huffingtonpost.com/r/segment/study-shows-entrepreneurship-likes-men-better/5332fbfb02a76075f80000b5',
+	title:'Study Shows Entrepreneurship Likes Men Better',
+	author: 'Caroline Modarress-Tehrani',
+	picture: '/assets/study_shows_men.jpg')
 
-NewsArticle.create(link: '/REAP_Ideal_Team.pdf',
-	title:'The Ideal REAP Team',
-	author: 'Program Material',
-	picture: '/assets/ideal_team.png')
+NewsArticle.create(link: 'http://www.bbc.com/news/technology-26430312',
+	title:'Next Silicon Valleys: Speed reading and life-size robots',
+	author: 'Richard Taylor',
+	picture: 'http://news.bbcimg.co.uk/media/images/73369000/jpg/_73369105_73368771.jpg')
 
-NewsArticle.create(link: '/brochure.pdf',
-	title:'Brochure',
-	author: 'Program Material',
-	picture: '/assets/acceleration.png')
+NewsArticle.create(link: 'http://techcrunch.com/2014/03/01/our-dangerous-obsession-with-the-mvp/',
+	title:'Our Dangerous Obsession With The MVP',
+	author: 'Bill Aulet',
+	picture: 'http://tctechcrunch2011.files.wordpress.com/2014/03/billauletcartoon.png')
 
-NewsArticle.create(link: '/REAP_Team_Assembly_Guide.pdf',
-	title:'Team Assembly Guide',
-	author: 'Program Material',
-	picture: '/assets/team.png')
+NewsArticle.create(link: 'http://techcrunch.com/2014/03/15/avoid-stagnation-why-acceleration-trumps-incubation/',
+	title:'Avoid Stagnation: Acceleration Trumps Incubation',
+	author: 'Bill Aulet',
+	picture: 'http://tctechcrunch2011.files.wordpress.com/2014/03/shutterstock_133006811.jpg')
 
+NewsArticle.create(link: 'http://www.nytimes.com/2014/04/03/opinion/were-not-no-1-were-not-no-1.html',
+	title:'We’re Not No. 1! We’re Not No. 1!',
+	author: 'Nicholas Kristof',
+	picture: '/assets/we_not_1.jpg')
 
+NewsArticle.create(link: 'http://betaboston.com/global-business-hub/2014/04/18/innovation-diplomacy/',
+	title:'Innovation Diplomacy: World comes to Greater Boston to learn innovation from MIT',
+	author: 'Chad O\'Connor',
+	picture: 'http://betaboston.com/wp-content/uploads/2014/04/REAP-logo-pattern-copy-2.png')
 
 
 
